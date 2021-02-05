@@ -209,8 +209,7 @@ const Root = (props: Props) => {
   const totalTopValues = 20;
   const rowHeight = gridHeight ? ((1 / totalTopValues) * gridHeight) : 0;
 
-
-  const axisIncrement = 10;
+  const axisIncrement = 20;
 
   const totalAxisValues = maxValue / axisIncrement;
 

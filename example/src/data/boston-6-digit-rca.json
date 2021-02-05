@@ -1,0 +1,3794 @@
+{
+  "data": {
+    "cityIndustryYearList": [
+      {
+        "naicsId": "2000",
+        "rcaNumCompany": 0
+      },
+      {
+        "naicsId": "2003",
+        "rcaNumCompany": 0.0455865521713035
+      },
+      {
+        "naicsId": "2004",
+        "rcaNumCompany": 0.06197121118618223
+      },
+      {
+        "naicsId": "2007",
+        "rcaNumCompany": 0.07910462554982546
+      },
+      {
+        "naicsId": "2008",
+        "rcaNumCompany": 0.3170014144812035
+      },
+      {
+        "naicsId": "2009",
+        "rcaNumCompany": 0.020658120719301506
+      },
+      {
+        "naicsId": "2012",
+        "rcaNumCompany": 10.348899951058533
+      },
+      {
+        "naicsId": "2013",
+        "rcaNumCompany": 0.041823302253696466
+      },
+      {
+        "naicsId": "2015",
+        "rcaNumCompany": 0.10213998089499113
+      },
+      {
+        "naicsId": "2016",
+        "rcaNumCompany": 0.10623507600350618
+      },
+      {
+        "naicsId": "2017",
+        "rcaNumCompany": 0.012959813276770095
+      },
+      {
+        "naicsId": "2018",
+        "rcaNumCompany": 0.3666694726538664
+      },
+      {
+        "naicsId": "2019",
+        "rcaNumCompany": 2.2853820725254264
+      },
+      {
+        "naicsId": "2020",
+        "rcaNumCompany": 0.03389517348943903
+      },
+      {
+        "naicsId": "2021",
+        "rcaNumCompany": 0.047327422485059695
+      },
+      {
+        "naicsId": "2022",
+        "rcaNumCompany": 2.513134925113871
+      },
+      {
+        "naicsId": "2023",
+        "rcaNumCompany": 0.3923402699614465
+      },
+      {
+        "naicsId": "2026",
+        "rcaNumCompany": 5.15015678315589
+      },
+      {
+        "naicsId": "2029",
+        "rcaNumCompany": 0.5414842541175225
+      },
+      {
+        "naicsId": "2030",
+        "rcaNumCompany": 0.024913887824764475
+      },
+      {
+        "naicsId": "2031",
+        "rcaNumCompany": 0.11918550573796226
+      },
+      {
+        "naicsId": "2032",
+        "rcaNumCompany": 0.490162374804381
+      },
+      {
+        "naicsId": "2038",
+        "rcaNumCompany": 0.09335234403984381
+      },
+      {
+        "naicsId": "2039",
+        "rcaNumCompany": 0.0942506568272364
+      },
+      {
+        "naicsId": "2042",
+        "rcaNumCompany": 0.014186658840119038
+      },
+      {
+        "naicsId": "2043",
+        "rcaNumCompany": 5.89776018716239
+      },
+      {
+        "naicsId": "2044",
+        "rcaNumCompany": 0.12798779545119643
+      },
+      {
+        "naicsId": "2045",
+        "rcaNumCompany": 2.643333481475192
+      },
+      {
+        "naicsId": "2046",
+        "rcaNumCompany": 0.11362993524054327
+      },
+      {
+        "naicsId": "2047",
+        "rcaNumCompany": 3.4388194194739956
+      },
+      {
+        "naicsId": "2048",
+        "rcaNumCompany": 0.21867672788908302
+      },
+      {
+        "naicsId": "2049",
+        "rcaNumCompany": 0.06858632471847324
+      },
+      {
+        "naicsId": "2050",
+        "rcaNumCompany": 0.3342423506435724
+      },
+      {
+        "naicsId": "2051",
+        "rcaNumCompany": 0.10820510897733325
+      },
+      {
+        "naicsId": "2052",
+        "rcaNumCompany": 0.21867069226412403
+      },
+      {
+        "naicsId": "2053",
+        "rcaNumCompany": 0.35785978822085357
+      },
+      {
+        "naicsId": "2055",
+        "rcaNumCompany": 0.6169760375771679
+      },
+      {
+        "naicsId": "2056",
+        "rcaNumCompany": 0.495811703869923
+      },
+      {
+        "naicsId": "2057",
+        "rcaNumCompany": 0.08838324652710122
+      },
+      {
+        "naicsId": "2059",
+        "rcaNumCompany": 0.05174205909212795
+      },
+      {
+        "naicsId": "2060",
+        "rcaNumCompany": 0.18201151398908325
+      },
+      {
+        "naicsId": "2061",
+        "rcaNumCompany": 0.05753610588546127
+      },
+      {
+        "naicsId": "2062",
+        "rcaNumCompany": 1.3089843124095317
+      },
+      {
+        "naicsId": "2063",
+        "rcaNumCompany": 0.11679354749131804
+      },
+      {
+        "naicsId": "2064",
+        "rcaNumCompany": 0.19767603611421136
+      },
+      {
+        "naicsId": "2065",
+        "rcaNumCompany": 0.5515250853756685
+      },
+      {
+        "naicsId": "2066",
+        "rcaNumCompany": 0.2841189833753444
+      },
+      {
+        "naicsId": "2070",
+        "rcaNumCompany": 0.23113851555250836
+      },
+      {
+        "naicsId": "2072",
+        "rcaNumCompany": 0.11945806324863385
+      },
+      {
+        "naicsId": "2075",
+        "rcaNumCompany": 0.0629907203452314
+      },
+      {
+        "naicsId": "2078",
+        "rcaNumCompany": 0.024040837054836835
+      },
+      {
+        "naicsId": "2079",
+        "rcaNumCompany": 0.3642647832682067
+      },
+      {
+        "naicsId": "2080",
+        "rcaNumCompany": 0.3560478399260645
+      },
+      {
+        "naicsId": "2086",
+        "rcaNumCompany": 1.7086968766545243
+      },
+      {
+        "naicsId": "2087",
+        "rcaNumCompany": 0.13120241535847443
+      },
+      {
+        "naicsId": "2088",
+        "rcaNumCompany": 0.303004193101921
+      },
+      {
+        "naicsId": "2090",
+        "rcaNumCompany": 0.08656750274717524
+      },
+      {
+        "naicsId": "2091",
+        "rcaNumCompany": 0.2918285168428318
+      },
+      {
+        "naicsId": "2092",
+        "rcaNumCompany": 4.628621919038839
+      },
+      {
+        "naicsId": "2093",
+        "rcaNumCompany": 13.798533268078046
+      },
+      {
+        "naicsId": "2094",
+        "rcaNumCompany": 30.471760967005686
+      },
+      {
+        "naicsId": "2095",
+        "rcaNumCompany": 12.08797129269647
+      },
+      {
+        "naicsId": "2096",
+        "rcaNumCompany": 17.121256998183796
+      },
+      {
+        "naicsId": "2097",
+        "rcaNumCompany": 6.771502437112375
+      },
+      {
+        "naicsId": "2098",
+        "rcaNumCompany": 6.771502437112375
+      },
+      {
+        "naicsId": "2099",
+        "rcaNumCompany": 0.9669908467779217
+      },
+      {
+        "naicsId": "2100",
+        "rcaNumCompany": 2.113648159561088
+      },
+      {
+        "naicsId": "2101",
+        "rcaNumCompany": 1.094466122729926
+      },
+      {
+        "naicsId": "2102",
+        "rcaNumCompany": 0.7768218273834528
+      },
+      {
+        "naicsId": "2103",
+        "rcaNumCompany": 0.7810344188500297
+      },
+      {
+        "naicsId": "2104",
+        "rcaNumCompany": 0.24788717870116103
+      },
+      {
+        "naicsId": "2105",
+        "rcaNumCompany": 0.7438436309965788
+      },
+      {
+        "naicsId": "2106",
+        "rcaNumCompany": 2.9546676753596857
+      },
+      {
+        "naicsId": "2107",
+        "rcaNumCompany": 0.17927638930567602
+      },
+      {
+        "naicsId": "2108",
+        "rcaNumCompany": 0.09641421380464582
+      },
+      {
+        "naicsId": "2109",
+        "rcaNumCompany": 4.642372484421482
+      },
+      {
+        "naicsId": "2110",
+        "rcaNumCompany": 0.8181415158290549
+      },
+      {
+        "naicsId": "2111",
+        "rcaNumCompany": 0.756779913130982
+      },
+      {
+        "naicsId": "2112",
+        "rcaNumCompany": 0.4314627353201958
+      },
+      {
+        "naicsId": "2113",
+        "rcaNumCompany": 0.2346990575122389
+      },
+      {
+        "naicsId": "2114",
+        "rcaNumCompany": 0.35064706195142104
+      },
+      {
+        "naicsId": "2115",
+        "rcaNumCompany": 1.2073864614224157
+      },
+      {
+        "naicsId": "2116",
+        "rcaNumCompany": 0.46391005969581395
+      },
+      {
+        "naicsId": "2117",
+        "rcaNumCompany": 0.11646579157002587
+      },
+      {
+        "naicsId": "2118",
+        "rcaNumCompany": 1.1988372374750522
+      },
+      {
+        "naicsId": "2119",
+        "rcaNumCompany": 0.06510596317998509
+      },
+      {
+        "naicsId": "2120",
+        "rcaNumCompany": 1.6234309020585056
+      },
+      {
+        "naicsId": "2121",
+        "rcaNumCompany": 0.5120034514372682
+      },
+      {
+        "naicsId": "2122",
+        "rcaNumCompany": 0.9062472677384099
+      },
+      {
+        "naicsId": "2123",
+        "rcaNumCompany": 1.292954997653588
+      },
+      {
+        "naicsId": "2124",
+        "rcaNumCompany": 4.774682893633099
+      },
+      {
+        "naicsId": "2125",
+        "rcaNumCompany": 1.3593350617251605
+      },
+      {
+        "naicsId": "2126",
+        "rcaNumCompany": 0.9481841701583564
+      },
+      {
+        "naicsId": "2127",
+        "rcaNumCompany": 1.7670946578239157
+      },
+      {
+        "naicsId": "2128",
+        "rcaNumCompany": 0.06679284334469797
+      },
+      {
+        "naicsId": "2129",
+        "rcaNumCompany": 1.6318921399844057
+      },
+      {
+        "naicsId": "2130",
+        "rcaNumCompany": 1.4458012582247712
+      },
+      {
+        "naicsId": "2131",
+        "rcaNumCompany": 1.118945441617281
+      },
+      {
+        "naicsId": "2132",
+        "rcaNumCompany": 1.9402000376422064
+      },
+      {
+        "naicsId": "2133",
+        "rcaNumCompany": 5.765504878130018
+      },
+      {
+        "naicsId": "2134",
+        "rcaNumCompany": 1.3862153554662422
+      },
+      {
+        "naicsId": "2135",
+        "rcaNumCompany": 1.0750944713750095
+      },
+      {
+        "naicsId": "2136",
+        "rcaNumCompany": 0.7130006810924325
+      },
+      {
+        "naicsId": "2137",
+        "rcaNumCompany": 0.5301357471606644
+      },
+      {
+        "naicsId": "2138",
+        "rcaNumCompany": 0.14560437945476568
+      },
+      {
+        "naicsId": "2139",
+        "rcaNumCompany": 0.11077283599032664
+      },
+      {
+        "naicsId": "2142",
+        "rcaNumCompany": 0.3245993178908728
+      },
+      {
+        "naicsId": "2143",
+        "rcaNumCompany": 0
+      },
+      {
+        "naicsId": "2144",
+        "rcaNumCompany": 0.18190587759094679
+      },
+      {
+        "naicsId": "2145",
+        "rcaNumCompany": 0.3568586190020184
+      },
+      {
+        "naicsId": "2148",
+        "rcaNumCompany": 0.8804481724100965
+      },
+      {
+        "naicsId": "2149",
+        "rcaNumCompany": 0.169581974077249
+      },
+      {
+        "naicsId": "2150",
+        "rcaNumCompany": 1.7924565274709225
+      },
+      {
+        "naicsId": "2152",
+        "rcaNumCompany": 0.9141528290101705
+      },
+      {
+        "naicsId": "2153",
+        "rcaNumCompany": 0.19588114723667777
+      },
+      {
+        "naicsId": "2154",
+        "rcaNumCompany": 1.121277745974996
+      },
+      {
+        "naicsId": "2155",
+        "rcaNumCompany": 0.28441363619709736
+      },
+      {
+        "naicsId": "2156",
+        "rcaNumCompany": 0.5274973046798446
+      },
+      {
+        "naicsId": "2157",
+        "rcaNumCompany": 0
+      },
+      {
+        "naicsId": "2158",
+        "rcaNumCompany": 0.5026269850227741
+      },
+      {
+        "naicsId": "2159",
+        "rcaNumCompany": 0.5816454903564182
+      },
+      {
+        "naicsId": "2160",
+        "rcaNumCompany": 0.8420806336046003
+      },
+      {
+        "naicsId": "2161",
+        "rcaNumCompany": 0.20325799422127191
+      },
+      {
+        "naicsId": "2162",
+        "rcaNumCompany": 0.42165720895303066
+      },
+      {
+        "naicsId": "2164",
+        "rcaNumCompany": 0.055152508537566855
+      },
+      {
+        "naicsId": "2165",
+        "rcaNumCompany": 0.21421273087525963
+      },
+      {
+        "naicsId": "2166",
+        "rcaNumCompany": 0.9272078465522398
+      },
+      {
+        "naicsId": "2167",
+        "rcaNumCompany": 0.09668956434497378
+      },
+      {
+        "naicsId": "2168",
+        "rcaNumCompany": 0.8282245336445486
+      },
+      {
+        "naicsId": "2169",
+        "rcaNumCompany": 0.09179009244516814
+      },
+      {
+        "naicsId": "2170",
+        "rcaNumCompany": 0.34036096643257974
+      },
+      {
+        "naicsId": "2171",
+        "rcaNumCompany": 0.9280739380813915
+      },
+      {
+        "naicsId": "2172",
+        "rcaNumCompany": 0.62426142826132
+      },
+      {
+        "naicsId": "2173",
+        "rcaNumCompany": 0.6776522083099856
+      },
+      {
+        "naicsId": "2174",
+        "rcaNumCompany": 0.272373282386643
+      },
+      {
+        "naicsId": "2175",
+        "rcaNumCompany": 0.3282415903088584
+      },
+      {
+        "naicsId": "2176",
+        "rcaNumCompany": 0.1613685488102684
+      },
+      {
+        "naicsId": "2177",
+        "rcaNumCompany": 1.1977108798036955
+      },
+      {
+        "naicsId": "2178",
+        "rcaNumCompany": 0.7615673672206121
+      },
+      {
+        "naicsId": "2179",
+        "rcaNumCompany": 0.1317115959207338
+      },
+      {
+        "naicsId": "2180",
+        "rcaNumCompany": 0.41546243278632455
+      },
+      {
+        "naicsId": "2181",
+        "rcaNumCompany": 0.7738859928128429
+      },
+      {
+        "naicsId": "2182",
+        "rcaNumCompany": 0.11466325857763193
+      },
+      {
+        "naicsId": "2183",
+        "rcaNumCompany": 1.3590193044518217
+      },
+      {
+        "naicsId": "2184",
+        "rcaNumCompany": 0.8734353291090572
+      },
+      {
+        "naicsId": "2185",
+        "rcaNumCompany": 0.4620336505474169
+      },
+      {
+        "naicsId": "2186",
+        "rcaNumCompany": 0.1397253082170685
+      },
+      {
+        "naicsId": "2187",
+        "rcaNumCompany": 0
+      },
+      {
+        "naicsId": "2188",
+        "rcaNumCompany": 0.09589986335308086
+      },
+      {
+        "naicsId": "2189",
+        "rcaNumCompany": 0.03992369599345652
+      },
+      {
+        "naicsId": "2190",
+        "rcaNumCompany": 0.09292531934029688
+      },
+      {
+        "naicsId": "2191",
+        "rcaNumCompany": 0.01789999665185374
+      },
+      {
+        "naicsId": "2192",
+        "rcaNumCompany": 0.06013174339813652
+      },
+      {
+        "naicsId": "2193",
+        "rcaNumCompany": 0.27452036907212324
+      },
+      {
+        "naicsId": "2194",
+        "rcaNumCompany": 0.2025374607311777
+      },
+      {
+        "naicsId": "2195",
+        "rcaNumCompany": 0.4001252534331064
+      },
+      {
+        "naicsId": "2196",
+        "rcaNumCompany": 1.480409439692584
+      },
+      {
+        "naicsId": "2197",
+        "rcaNumCompany": 0.4788647611368102
+      },
+      {
+        "naicsId": "2198",
+        "rcaNumCompany": 0.4452765850025185
+      },
+      {
+        "naicsId": "2199",
+        "rcaNumCompany": 0.06786583734299707
+      },
+      {
+        "naicsId": "2200",
+        "rcaNumCompany": 0.03861937668763262
+      },
+      {
+        "naicsId": "2201",
+        "rcaNumCompany": 0.6432033977204367
+      },
+      {
+        "naicsId": "2202",
+        "rcaNumCompany": 0.022989436294162616
+      },
+      {
+        "naicsId": "2203",
+        "rcaNumCompany": 0.08243751991490014
+      },
+      {
+        "naicsId": "2204",
+        "rcaNumCompany": 0.2736574851100645
+      },
+      {
+        "naicsId": "2205",
+        "rcaNumCompany": 0.1208797129269647
+      },
+      {
+        "naicsId": "2206",
+        "rcaNumCompany": 0.2785724267053181
+      },
+      {
+        "naicsId": "2207",
+        "rcaNumCompany": 0.13403711402784052
+      },
+      {
+        "naicsId": "2208",
+        "rcaNumCompany": 0.4664045045970258
+      },
+      {
+        "naicsId": "2209",
+        "rcaNumCompany": 0.14916150045037455
+      },
+      {
+        "naicsId": "2210",
+        "rcaNumCompany": 0.0395287964546855
+      },
+      {
+        "naicsId": "2216",
+        "rcaNumCompany": 0.3588431124671916
+      },
+      {
+        "naicsId": "2217",
+        "rcaNumCompany": 1.4129100912058277
+      },
+      {
+        "naicsId": "2218",
+        "rcaNumCompany": 0.6899266634039023
+      },
+      {
+        "naicsId": "2219",
+        "rcaNumCompany": 1.2484589149648955
+      },
+      {
+        "naicsId": "2220",
+        "rcaNumCompany": 0.18465868680136763
+      },
+      {
+        "naicsId": "2222",
+        "rcaNumCompany": 0.12709806451305813
+      },
+      {
+        "naicsId": "2223",
+        "rcaNumCompany": 0.19343428141025054
+      },
+      {
+        "naicsId": "2225",
+        "rcaNumCompany": 0.2801505605170254
+      },
+      {
+        "naicsId": "2227",
+        "rcaNumCompany": 0.07584756930181875
+      },
+      {
+        "naicsId": "2228",
+        "rcaNumCompany": 0.08576883462175172
+      },
+      {
+        "naicsId": "2229",
+        "rcaNumCompany": 0.27186701234503213
+      },
+      {
+        "naicsId": "2230",
+        "rcaNumCompany": 0.04812597151935617
+      },
+      {
+        "naicsId": "2231",
+        "rcaNumCompany": 0.1780239199630322
+      },
+      {
+        "naicsId": "2232",
+        "rcaNumCompany": 0.18277573308210948
+      },
+      {
+        "naicsId": "2233",
+        "rcaNumCompany": 0.16632300732502536
+      },
+      {
+        "naicsId": "2234",
+        "rcaNumCompany": 0.08793554765797984
+      },
+      {
+        "naicsId": "2235",
+        "rcaNumCompany": 0.5493272530699824
+      },
+      {
+        "naicsId": "2236",
+        "rcaNumCompany": 3.1979569622450157
+      },
+      {
+        "naicsId": "2237",
+        "rcaNumCompany": 0.03295431971918423
+      },
+      {
+        "naicsId": "2238",
+        "rcaNumCompany": 0.28821952643286525
+      },
+      {
+        "naicsId": "2239",
+        "rcaNumCompany": 0.08445805095370557
+      },
+      {
+        "naicsId": "2240",
+        "rcaNumCompany": 0.26593536843932236
+      },
+      {
+        "naicsId": "2241",
+        "rcaNumCompany": 0.185051179961573
+      },
+      {
+        "naicsId": "2242",
+        "rcaNumCompany": 0.23236250684435597
+      },
+      {
+        "naicsId": "2244",
+        "rcaNumCompany": 6.847586734158581
+      },
+      {
+        "naicsId": "2245",
+        "rcaNumCompany": 0.7073993048970718
+      },
+      {
+        "naicsId": "2246",
+        "rcaNumCompany": 0.0967869591328926
+      },
+      {
+        "naicsId": "2247",
+        "rcaNumCompany": 0.6158110407213192
+      },
+      {
+        "naicsId": "2249",
+        "rcaNumCompany": 0.03941163306790992
+      },
+      {
+        "naicsId": "2250",
+        "rcaNumCompany": 0.45812628724669224
+      },
+      {
+        "naicsId": "2251",
+        "rcaNumCompany": 0.14460630039707414
+      },
+      {
+        "naicsId": "2252",
+        "rcaNumCompany": 0.10474395061703473
+      },
+      {
+        "naicsId": "2253",
+        "rcaNumCompany": 0.11665692506111604
+      },
+      {
+        "naicsId": "2254",
+        "rcaNumCompany": 0.24934274231440043
+      },
+      {
+        "naicsId": "2256",
+        "rcaNumCompany": 0.5240199650387908
+      },
+      {
+        "naicsId": "2257",
+        "rcaNumCompany": 0.32490834237477495
+      },
+      {
+        "naicsId": "2258",
+        "rcaNumCompany": 0.2474528873276499
+      },
+      {
+        "naicsId": "2259",
+        "rcaNumCompany": 3.492414570025122
+      },
+      {
+        "naicsId": "2260",
+        "rcaNumCompany": 29.05916277648224
+      },
+      {
+        "naicsId": "2261",
+        "rcaNumCompany": 3.467808413526463
+      },
+      {
+        "naicsId": "2262",
+        "rcaNumCompany": 0.1691231356570317
+      },
+      {
+        "naicsId": "2263",
+        "rcaNumCompany": 0.6436886511325229
+      },
+      {
+        "naicsId": "2264",
+        "rcaNumCompany": 0.06622496271014547
+      },
+      {
+        "naicsId": "2265",
+        "rcaNumCompany": 0.4821134421245056
+      },
+      {
+        "naicsId": "2267",
+        "rcaNumCompany": 0.3320544537628225
+      },
+      {
+        "naicsId": "2269",
+        "rcaNumCompany": 0.3230222010636645
+      },
+      {
+        "naicsId": "2270",
+        "rcaNumCompany": 0.1723191006616721
+      },
+      {
+        "naicsId": "2271",
+        "rcaNumCompany": 2.3641883508883716
+      },
+      {
+        "naicsId": "2272",
+        "rcaNumCompany": 0.1803322132641043
+      },
+      {
+        "naicsId": "2273",
+        "rcaNumCompany": 0.771436986506473
+      },
+      {
+        "naicsId": "2275",
+        "rcaNumCompany": 0.18646666578483845
+      },
+      {
+        "naicsId": "2276",
+        "rcaNumCompany": 0.09090394819243461
+      },
+      {
+        "naicsId": "2277",
+        "rcaNumCompany": 0
+      },
+      {
+        "naicsId": "2278",
+        "rcaNumCompany": 0.3427002170609824
+      },
+      {
+        "naicsId": "2280",
+        "rcaNumCompany": 0.5055455987889785
+      },
+      {
+        "naicsId": "2281",
+        "rcaNumCompany": 0
+      },
+      {
+        "naicsId": "2282",
+        "rcaNumCompany": 0.09015313895563812
+      },
+      {
+        "naicsId": "2283",
+        "rcaNumCompany": 0.07060982607250062
+      },
+      {
+        "naicsId": "2284",
+        "rcaNumCompany": 0.18470065998437593
+      },
+      {
+        "naicsId": "2286",
+        "rcaNumCompany": 0.06767742580123418
+      },
+      {
+        "naicsId": "2287",
+        "rcaNumCompany": 0.12639513709093267
+      },
+      {
+        "naicsId": "2288",
+        "rcaNumCompany": 0.0807631944350007
+      },
+      {
+        "naicsId": "2289",
+        "rcaNumCompany": 0.085891392707515
+      },
+      {
+        "naicsId": "2290",
+        "rcaNumCompany": 0.051401660378991285
+      },
+      {
+        "naicsId": "2291",
+        "rcaNumCompany": 0.04841911170604717
+      },
+      {
+        "naicsId": "2292",
+        "rcaNumCompany": 0.4439251324560741
+      },
+      {
+        "naicsId": "2293",
+        "rcaNumCompany": 0.1872304821321394
+      },
+      {
+        "naicsId": "2294",
+        "rcaNumCompany": 0.24519074537599567
+      },
+      {
+        "naicsId": "2295",
+        "rcaNumCompany": 0.07719255469792448
+      },
+      {
+        "naicsId": "2296",
+        "rcaNumCompany": 0.8889230998525897
+      },
+      {
+        "naicsId": "2297",
+        "rcaNumCompany": 0.12458641621944402
+      },
+      {
+        "naicsId": "2299",
+        "rcaNumCompany": 0.21833411958048257
+      },
+      {
+        "naicsId": "2300",
+        "rcaNumCompany": 0.8198680080808705
+      },
+      {
+        "naicsId": "2301",
+        "rcaNumCompany": 0.4341479745966972
+      },
+      {
+        "naicsId": "2302",
+        "rcaNumCompany": 0.3559785159696926
+      },
+      {
+        "naicsId": "2303",
+        "rcaNumCompany": 0.25891441647061275
+      },
+      {
+        "naicsId": "2304",
+        "rcaNumCompany": 0.08435089541039636
+      },
+      {
+        "naicsId": "2305",
+        "rcaNumCompany": 0.07637032823810949
+      },
+      {
+        "naicsId": "2306",
+        "rcaNumCompany": 0.02225569881948072
+      },
+      {
+        "naicsId": "2307",
+        "rcaNumCompany": 0.09363267488348505
+      },
+      {
+        "naicsId": "2308",
+        "rcaNumCompany": 0
+      },
+      {
+        "naicsId": "2309",
+        "rcaNumCompany": 0.025117538920460793
+      },
+      {
+        "naicsId": "2310",
+        "rcaNumCompany": 0.40404544928626324
+      },
+      {
+        "naicsId": "2313",
+        "rcaNumCompany": 0.11833693579419684
+      },
+      {
+        "naicsId": "2315",
+        "rcaNumCompany": 0.33348028418063674
+      },
+      {
+        "naicsId": "2316",
+        "rcaNumCompany": 0.07193805461421762
+      },
+      {
+        "naicsId": "2317",
+        "rcaNumCompany": 0.1533813471493575
+      },
+      {
+        "naicsId": "2318",
+        "rcaNumCompany": 0.10338171659713549
+      },
+      {
+        "naicsId": "2319",
+        "rcaNumCompany": 0.03920458149502179
+      },
+      {
+        "naicsId": "2320",
+        "rcaNumCompany": 0.3857184932532365
+      },
+      {
+        "naicsId": "2323",
+        "rcaNumCompany": 0.6403872707601894
+      },
+      {
+        "naicsId": "2324",
+        "rcaNumCompany": 0.07278286855176516
+      },
+      {
+        "naicsId": "2325",
+        "rcaNumCompany": 0.07284086286933629
+      },
+      {
+        "naicsId": "2329",
+        "rcaNumCompany": 0.11453065199019123
+      },
+      {
+        "naicsId": "2330",
+        "rcaNumCompany": 0.6058290937818881
+      },
+      {
+        "naicsId": "2331",
+        "rcaNumCompany": 0.03768407402309188
+      },
+      {
+        "naicsId": "2332",
+        "rcaNumCompany": 0.04237093066095808
+      },
+      {
+        "naicsId": "2333",
+        "rcaNumCompany": 0.1268214174073788
+      },
+      {
+        "naicsId": "2334",
+        "rcaNumCompany": 0.11652371615499957
+      },
+      {
+        "naicsId": "2335",
+        "rcaNumCompany": 0.029125321619631474
+      },
+      {
+        "naicsId": "2336",
+        "rcaNumCompany": 0.6466842310485078
+      },
+      {
+        "naicsId": "2337",
+        "rcaNumCompany": 1.165239541819558
+      },
+      {
+        "naicsId": "2338",
+        "rcaNumCompany": 0.7610013144725666
+      },
+      {
+        "naicsId": "2340",
+        "rcaNumCompany": 0.12561358007697293
+      },
+      {
+        "naicsId": "2341",
+        "rcaNumCompany": 0.11872114662469747
+      },
+      {
+        "naicsId": "2342",
+        "rcaNumCompany": 0.06361979462803052
+      },
+      {
+        "naicsId": "2343",
+        "rcaNumCompany": 0.0479429830344917
+      },
+      {
+        "naicsId": "2344",
+        "rcaNumCompany": 0.05302126174205296
+      },
+      {
+        "naicsId": "2345",
+        "rcaNumCompany": 3.4699374650716384
+      },
+      {
+        "naicsId": "2346",
+        "rcaNumCompany": 0.5184844120582321
+      },
+      {
+        "naicsId": "2347",
+        "rcaNumCompany": 0.11647731947464478
+      },
+      {
+        "naicsId": "2348",
+        "rcaNumCompany": 0.16936597109961474
+      },
+      {
+        "naicsId": "2349",
+        "rcaNumCompany": 0.5482890688371842
+      },
+      {
+        "naicsId": "2350",
+        "rcaNumCompany": 0.31741417673964256
+      },
+      {
+        "naicsId": "2351",
+        "rcaNumCompany": 0.315678674766102
+      },
+      {
+        "naicsId": "2352",
+        "rcaNumCompany": 0.30641994268497336
+      },
+      {
+        "naicsId": "2353",
+        "rcaNumCompany": 0.3704773369848715
+      },
+      {
+        "naicsId": "2354",
+        "rcaNumCompany": 0.12514070212322664
+      },
+      {
+        "naicsId": "2358",
+        "rcaNumCompany": 0.8747873961819812
+      },
+      {
+        "naicsId": "2359",
+        "rcaNumCompany": 0.3610576466097934
+      },
+      {
+        "naicsId": "2360",
+        "rcaNumCompany": 0.04040141995691695
+      },
+      {
+        "naicsId": "2361",
+        "rcaNumCompany": 0.17692139133155999
+      },
+      {
+        "naicsId": "2362",
+        "rcaNumCompany": 0.6822036037389333
+      },
+      {
+        "naicsId": "2363",
+        "rcaNumCompany": 0.15577092996765318
+      },
+      {
+        "naicsId": "2364",
+        "rcaNumCompany": 0.056057202453482786
+      },
+      {
+        "naicsId": "2366",
+        "rcaNumCompany": 0.10352073935991739
+      },
+      {
+        "naicsId": "2367",
+        "rcaNumCompany": 1.220905280814919
+      },
+      {
+        "naicsId": "2368",
+        "rcaNumCompany": 0.4513220582622417
+      },
+      {
+        "naicsId": "2369",
+        "rcaNumCompany": 0.14627908054968225
+      },
+      {
+        "naicsId": "2370",
+        "rcaNumCompany": 0.1707281433801659
+      },
+      {
+        "naicsId": "2371",
+        "rcaNumCompany": 1.4997494384490113
+      },
+      {
+        "naicsId": "2372",
+        "rcaNumCompany": 0.6341206295623627
+      },
+      {
+        "naicsId": "2373",
+        "rcaNumCompany": 0.4653047821601976
+      },
+      {
+        "naicsId": "2374",
+        "rcaNumCompany": 0.13565614231276876
+      },
+      {
+        "naicsId": "2375",
+        "rcaNumCompany": 0.4867369472267131
+      },
+      {
+        "naicsId": "2376",
+        "rcaNumCompany": 0.3107381615500899
+      },
+      {
+        "naicsId": "2378",
+        "rcaNumCompany": 0.07816278303708012
+      },
+      {
+        "naicsId": "2379",
+        "rcaNumCompany": 0.13641890535780407
+      },
+      {
+        "naicsId": "2380",
+        "rcaNumCompany": 0.11892825308668431
+      },
+      {
+        "naicsId": "2381",
+        "rcaNumCompany": 0.08115883511354306
+      },
+      {
+        "naicsId": "2382",
+        "rcaNumCompany": 2.7778764112742578
+      },
+      {
+        "naicsId": "2383",
+        "rcaNumCompany": 0.0918977460678734
+      },
+      {
+        "naicsId": "2384",
+        "rcaNumCompany": 0.2656648732956032
+      },
+      {
+        "naicsId": "2385",
+        "rcaNumCompany": 0.356684569927558
+      },
+      {
+        "naicsId": "2386",
+        "rcaNumCompany": 0.17946558606334637
+      },
+      {
+        "naicsId": "2387",
+        "rcaNumCompany": 0.14044443524507152
+      },
+      {
+        "naicsId": "2388",
+        "rcaNumCompany": 0.26325495435858043
+      },
+      {
+        "naicsId": "2389",
+        "rcaNumCompany": 0.3978902411360916
+      },
+      {
+        "naicsId": "2390",
+        "rcaNumCompany": 0.19910761317945452
+      },
+      {
+        "naicsId": "2391",
+        "rcaNumCompany": 0.09266627764928237
+      },
+      {
+        "naicsId": "2394",
+        "rcaNumCompany": 0.24336847361335656
+      },
+      {
+        "naicsId": "2395",
+        "rcaNumCompany": 0.17252235508566557
+      },
+      {
+        "naicsId": "2398",
+        "rcaNumCompany": 0.6576639057627126
+      },
+      {
+        "naicsId": "2399",
+        "rcaNumCompany": 0.06508519316852378
+      },
+      {
+        "naicsId": "2400",
+        "rcaNumCompany": 0.47086150460706855
+      },
+      {
+        "naicsId": "2401",
+        "rcaNumCompany": 2.084078988416969
+      },
+      {
+        "naicsId": "2402",
+        "rcaNumCompany": 0.8699744395041029
+      },
+      {
+        "naicsId": "2403",
+        "rcaNumCompany": 1.1931361299940806
+      },
+      {
+        "naicsId": "2404",
+        "rcaNumCompany": 1.2218424879753023
+      },
+      {
+        "naicsId": "2405",
+        "rcaNumCompany": 0.607698936663931
+      },
+      {
+        "naicsId": "2406",
+        "rcaNumCompany": 0.5083804777144335
+      },
+      {
+        "naicsId": "2408",
+        "rcaNumCompany": 3.3560577038921213
+      },
+      {
+        "naicsId": "2409",
+        "rcaNumCompany": 0.09767459663540241
+      },
+      {
+        "naicsId": "2410",
+        "rcaNumCompany": 0.22925462796493307
+      },
+      {
+        "naicsId": "2411",
+        "rcaNumCompany": 0.3632739030979957
+      },
+      {
+        "naicsId": "2412",
+        "rcaNumCompany": 0.13124830088407033
+      },
+      {
+        "naicsId": "2413",
+        "rcaNumCompany": 4.649773976288569
+      },
+      {
+        "naicsId": "2414",
+        "rcaNumCompany": 1.7500981470730157
+      },
+      {
+        "naicsId": "2415",
+        "rcaNumCompany": 1.012911721894926
+      },
+      {
+        "naicsId": "2416",
+        "rcaNumCompany": 1.417439692964958
+      },
+      {
+        "naicsId": "2417",
+        "rcaNumCompany": 0.0959992469425225
+      },
+      {
+        "naicsId": "2418",
+        "rcaNumCompany": 0.9369199846368459
+      },
+      {
+        "naicsId": "2419",
+        "rcaNumCompany": 4.480380236808308
+      },
+      {
+        "naicsId": "2420",
+        "rcaNumCompany": 0.8425371695946272
+      },
+      {
+        "naicsId": "2421",
+        "rcaNumCompany": 0.783791958869838
+      },
+      {
+        "naicsId": "2422",
+        "rcaNumCompany": 0.6385978547049742
+      },
+      {
+        "naicsId": "2423",
+        "rcaNumCompany": 1.1478473819236985
+      },
+      {
+        "naicsId": "2424",
+        "rcaNumCompany": 0.11724918713255712
+      },
+      {
+        "naicsId": "2425",
+        "rcaNumCompany": 0.19198169317679464
+      },
+      {
+        "naicsId": "2426",
+        "rcaNumCompany": 1.0480733071454185
+      },
+      {
+        "naicsId": "2427",
+        "rcaNumCompany": 0.2892316643101192
+      },
+      {
+        "naicsId": "2428",
+        "rcaNumCompany": 0.17225416035616556
+      },
+      {
+        "naicsId": "2429",
+        "rcaNumCompany": 0.09465729526380227
+      },
+      {
+        "naicsId": "2430",
+        "rcaNumCompany": 0.02948404544461121
+      },
+      {
+        "naicsId": "2431",
+        "rcaNumCompany": 0.15247315970480702
+      },
+      {
+        "naicsId": "2432",
+        "rcaNumCompany": 0.10433833039411697
+      },
+      {
+        "naicsId": "2433",
+        "rcaNumCompany": 0.5741364592527239
+      },
+      {
+        "naicsId": "2434",
+        "rcaNumCompany": 1.0242608728405271
+      },
+      {
+        "naicsId": "2437",
+        "rcaNumCompany": 1.0242608728405274
+      },
+      {
+        "naicsId": "2438",
+        "rcaNumCompany": 0.21588849098395174
+      },
+      {
+        "naicsId": "2439",
+        "rcaNumCompany": 0.5106999044749555
+      },
+      {
+        "naicsId": "2440",
+        "rcaNumCompany": 0.4710913831539142
+      },
+      {
+        "naicsId": "2441",
+        "rcaNumCompany": 0.21145323570784988
+      },
+      {
+        "naicsId": "2442",
+        "rcaNumCompany": 0.15367141483675906
+      },
+      {
+        "naicsId": "2445",
+        "rcaNumCompany": 0.7349972494554136
+      },
+      {
+        "naicsId": "2446",
+        "rcaNumCompany": 0
+      },
+      {
+        "naicsId": "2448",
+        "rcaNumCompany": 0.3279472032323482
+      },
+      {
+        "naicsId": "2449",
+        "rcaNumCompany": 0.18405761657922895
+      },
+      {
+        "naicsId": "2450",
+        "rcaNumCompany": 0.09315020547804567
+      },
+      {
+        "naicsId": "2452",
+        "rcaNumCompany": 3.6657757554292556
+      },
+      {
+        "naicsId": "2454",
+        "rcaNumCompany": 1.6773446403856338
+      },
+      {
+        "naicsId": "2455",
+        "rcaNumCompany": 0.07989100537558844
+      },
+      {
+        "naicsId": "2456",
+        "rcaNumCompany": 0.08754919024976059
+      },
+      {
+        "naicsId": "2457",
+        "rcaNumCompany": 1.306356754675138
+      },
+      {
+        "naicsId": "2458",
+        "rcaNumCompany": 3.7542210636967988
+      },
+      {
+        "naicsId": "2459",
+        "rcaNumCompany": 0.5486288546197573
+      },
+      {
+        "naicsId": "2461",
+        "rcaNumCompany": 5.625555870831819
+      },
+      {
+        "naicsId": "2463",
+        "rcaNumCompany": 0.24199942528396304
+      },
+      {
+        "naicsId": "2464",
+        "rcaNumCompany": 0.15881540741009353
+      },
+      {
+        "naicsId": "2465",
+        "rcaNumCompany": 1.0131455966864047
+      },
+      {
+        "naicsId": "2466",
+        "rcaNumCompany": 0.17207582663720858
+      },
+      {
+        "naicsId": "2467",
+        "rcaNumCompany": 2.8944152897419646
+      },
+      {
+        "naicsId": "2468",
+        "rcaNumCompany": 0.09240867616984286
+      },
+      {
+        "naicsId": "2469",
+        "rcaNumCompany": 2.2619671779103387
+      },
+      {
+        "naicsId": "2470",
+        "rcaNumCompany": 0.05981696901751485
+      },
+      {
+        "naicsId": "2471",
+        "rcaNumCompany": 0.07126753229924288
+      },
+      {
+        "naicsId": "2472",
+        "rcaNumCompany": 0.20569724260495115
+      },
+      {
+        "naicsId": "2473",
+        "rcaNumCompany": 0.014031509271069387
+      },
+      {
+        "naicsId": "2474",
+        "rcaNumCompany": 0.1633940954480542
+      },
+      {
+        "naicsId": "2475",
+        "rcaNumCompany": 0.17189786179205913
+      },
+      {
+        "naicsId": "2476",
+        "rcaNumCompany": 1.4784142787226475
+      },
+      {
+        "naicsId": "2477",
+        "rcaNumCompany": 0.7123929644387635
+      },
+      {
+        "naicsId": "2478",
+        "rcaNumCompany": 0.40182541934512994
+      },
+      {
+        "naicsId": "2479",
+        "rcaNumCompany": 0.37302844336043683
+      },
+      {
+        "naicsId": "2480",
+        "rcaNumCompany": 1.790262578232892
+      },
+      {
+        "naicsId": "2481",
+        "rcaNumCompany": 1.699461313269846
+      },
+      {
+        "naicsId": "2482",
+        "rcaNumCompany": 1.5595783172089523
+      },
+      {
+        "naicsId": "2483",
+        "rcaNumCompany": 0.36540815672633464
+      },
+      {
+        "naicsId": "2484",
+        "rcaNumCompany": 0.7652725357010559
+      },
+      {
+        "naicsId": "2485",
+        "rcaNumCompany": 1.9466495936332853
+      },
+      {
+        "naicsId": "2486",
+        "rcaNumCompany": 0.21717067949759059
+      },
+      {
+        "naicsId": "2487",
+        "rcaNumCompany": 0.8091929730314927
+      },
+      {
+        "naicsId": "2488",
+        "rcaNumCompany": 0.3437534592221056
+      },
+      {
+        "naicsId": "2489",
+        "rcaNumCompany": 0.43704517721601777
+      },
+      {
+        "naicsId": "2490",
+        "rcaNumCompany": 1.4434855365672887
+      },
+      {
+        "naicsId": "2491",
+        "rcaNumCompany": 0.23207738741055356
+      },
+      {
+        "naicsId": "2492",
+        "rcaNumCompany": 0.870276394138996
+      },
+      {
+        "naicsId": "2493",
+        "rcaNumCompany": 0.261435508773166
+      },
+      {
+        "naicsId": "2494",
+        "rcaNumCompany": 0.07706240918947697
+      },
+      {
+        "naicsId": "2495",
+        "rcaNumCompany": 0
+      },
+      {
+        "naicsId": "2496",
+        "rcaNumCompany": 0.245252802748002
+      },
+      {
+        "naicsId": "2497",
+        "rcaNumCompany": 0.09129716719096374
+      },
+      {
+        "naicsId": "2498",
+        "rcaNumCompany": 0.31822908629221375
+      },
+      {
+        "naicsId": "2499",
+        "rcaNumCompany": 0.2674916836898817
+      },
+      {
+        "naicsId": "2500",
+        "rcaNumCompany": 0.40498519393517357
+      },
+      {
+        "naicsId": "2501",
+        "rcaNumCompany": 0.2019158170972468
+      },
+      {
+        "naicsId": "2502",
+        "rcaNumCompany": 0.27304063029588566
+      },
+      {
+        "naicsId": "2503",
+        "rcaNumCompany": 0.5649157933389115
+      },
+      {
+        "naicsId": "2504",
+        "rcaNumCompany": 0.09607256038669612
+      },
+      {
+        "naicsId": "2505",
+        "rcaNumCompany": 1.4884442263394908
+      },
+      {
+        "naicsId": "2506",
+        "rcaNumCompany": 0.024734647757647134
+      },
+      {
+        "naicsId": "2507",
+        "rcaNumCompany": 0.009269047207052733
+      },
+      {
+        "naicsId": "2508",
+        "rcaNumCompany": 0.5772275927861062
+      },
+      {
+        "naicsId": "2509",
+        "rcaNumCompany": 0.39199936245174716
+      },
+      {
+        "naicsId": "2510",
+        "rcaNumCompany": 2.09514308078972
+      },
+      {
+        "naicsId": "2511",
+        "rcaNumCompany": 0.43883895158218905
+      },
+      {
+        "naicsId": "2513",
+        "rcaNumCompany": 0.24939653756941305
+      },
+      {
+        "naicsId": "2514",
+        "rcaNumCompany": 0.07042716793563919
+      },
+      {
+        "naicsId": "2515",
+        "rcaNumCompany": 0.0398938283572338
+      },
+      {
+        "naicsId": "2516",
+        "rcaNumCompany": 0.3143869158626766
+      },
+      {
+        "naicsId": "2517",
+        "rcaNumCompany": 0.0938745106108062
+      },
+      {
+        "naicsId": "2518",
+        "rcaNumCompany": 0.1994237989563748
+      },
+      {
+        "naicsId": "2519",
+        "rcaNumCompany": 0.09065603857792691
+      },
+      {
+        "naicsId": "2520",
+        "rcaNumCompany": 0.6903698107245386
+      },
+      {
+        "naicsId": "2521",
+        "rcaNumCompany": 0.7442221131697454
+      },
+      {
+        "naicsId": "2522",
+        "rcaNumCompany": 1.1000246394034967
+      },
+      {
+        "naicsId": "2523",
+        "rcaNumCompany": 0.08826540476978352
+      },
+      {
+        "naicsId": "2524",
+        "rcaNumCompany": 0.1104511062515193
+      },
+      {
+        "naicsId": "2525",
+        "rcaNumCompany": 0.2571708554148012
+      },
+      {
+        "naicsId": "2526",
+        "rcaNumCompany": 0.2621328874241187
+      },
+      {
+        "naicsId": "2527",
+        "rcaNumCompany": 1.7125477323523162
+      },
+      {
+        "naicsId": "2528",
+        "rcaNumCompany": 0.39823234555068765
+      },
+      {
+        "naicsId": "2529",
+        "rcaNumCompany": 0.5705073194111396
+      },
+      {
+        "naicsId": "2530",
+        "rcaNumCompany": 0.188993090503081
+      },
+      {
+        "naicsId": "2531",
+        "rcaNumCompany": 0.14311453659710943
+      },
+      {
+        "naicsId": "2532",
+        "rcaNumCompany": 0.6919907312064743
+      },
+      {
+        "naicsId": "2533",
+        "rcaNumCompany": 0.29403407110491064
+      },
+      {
+        "naicsId": "2534",
+        "rcaNumCompany": 0.04324791621573841
+      },
+      {
+        "naicsId": "2535",
+        "rcaNumCompany": 0.27040360216989295
+      },
+      {
+        "naicsId": "2536",
+        "rcaNumCompany": 0.35738626500660753
+      },
+      {
+        "naicsId": "2537",
+        "rcaNumCompany": 0.27294305108421857
+      },
+      {
+        "naicsId": "2538",
+        "rcaNumCompany": 0.05051433278684032
+      },
+      {
+        "naicsId": "2539",
+        "rcaNumCompany": 0.03604916808999628
+      },
+      {
+        "naicsId": "2540",
+        "rcaNumCompany": 0.16829157606023065
+      },
+      {
+        "naicsId": "2541",
+        "rcaNumCompany": 0.4111537080380645
+      },
+      {
+        "naicsId": "2542",
+        "rcaNumCompany": 0.3181497742023866
+      },
+      {
+        "naicsId": "2543",
+        "rcaNumCompany": 0.034628822901421726
+      },
+      {
+        "naicsId": "2544",
+        "rcaNumCompany": 0.27946343095905674
+      },
+      {
+        "naicsId": "2545",
+        "rcaNumCompany": 0.9002736108430074
+      },
+      {
+        "naicsId": "2546",
+        "rcaNumCompany": 0.23358958196248125
+      },
+      {
+        "naicsId": "2547",
+        "rcaNumCompany": 1.0918386510882767
+      },
+      {
+        "naicsId": "2548",
+        "rcaNumCompany": 0.4153809756603873
+      },
+      {
+        "naicsId": "2549",
+        "rcaNumCompany": 0.39175364645180905
+      },
+      {
+        "naicsId": "2550",
+        "rcaNumCompany": 0.29008508643265457
+      },
+      {
+        "naicsId": "2551",
+        "rcaNumCompany": 0.12192091078768597
+      },
+      {
+        "naicsId": "2552",
+        "rcaNumCompany": 0.17327858386639888
+      },
+      {
+        "naicsId": "2553",
+        "rcaNumCompany": 0.15318429799645375
+      },
+      {
+        "naicsId": "2554",
+        "rcaNumCompany": 0.07526601792910374
+      },
+      {
+        "naicsId": "2555",
+        "rcaNumCompany": 0.11574345477639926
+      },
+      {
+        "naicsId": "2556",
+        "rcaNumCompany": 0.047723979588106
+      },
+      {
+        "naicsId": "2557",
+        "rcaNumCompany": 0.3416297716937315
+      },
+      {
+        "naicsId": "2558",
+        "rcaNumCompany": 0.694795852667882
+      },
+      {
+        "naicsId": "2559",
+        "rcaNumCompany": 0.8151066463867304
+      },
+      {
+        "naicsId": "2560",
+        "rcaNumCompany": 0.1347617855669054
+      },
+      {
+        "naicsId": "2561",
+        "rcaNumCompany": 1.0305814074935913
+      },
+      {
+        "naicsId": "2562",
+        "rcaNumCompany": 0.8037043654545258
+      },
+      {
+        "naicsId": "2563",
+        "rcaNumCompany": 0.5248988743183209
+      },
+      {
+        "naicsId": "2564",
+        "rcaNumCompany": 0.28930794351215255
+      },
+      {
+        "naicsId": "2565",
+        "rcaNumCompany": 0.28765470835442836
+      },
+      {
+        "naicsId": "2567",
+        "rcaNumCompany": 0.7477732752639432
+      },
+      {
+        "naicsId": "2568",
+        "rcaNumCompany": 0.7229788813311631
+      },
+      {
+        "naicsId": "2569",
+        "rcaNumCompany": 0.8458203076195951
+      },
+      {
+        "naicsId": "2570",
+        "rcaNumCompany": 0.3493577690484728
+      },
+      {
+        "naicsId": "2571",
+        "rcaNumCompany": 3.555782950192751
+      },
+      {
+        "naicsId": "2572",
+        "rcaNumCompany": 0.7578773453876093
+      },
+      {
+        "naicsId": "2573",
+        "rcaNumCompany": 0.27017394144273565
+      },
+      {
+        "naicsId": "2574",
+        "rcaNumCompany": 2.5344523611081367
+      },
+      {
+        "naicsId": "2575",
+        "rcaNumCompany": 0.6388375992449529
+      },
+      {
+        "naicsId": "2576",
+        "rcaNumCompany": 4.302080721558628
+      },
+      {
+        "naicsId": "2577",
+        "rcaNumCompany": 3.2426913079129682
+      },
+      {
+        "naicsId": "2578",
+        "rcaNumCompany": 0.3757448462357277
+      },
+      {
+        "naicsId": "2579",
+        "rcaNumCompany": 0.18476158093612344
+      },
+      {
+        "naicsId": "2580",
+        "rcaNumCompany": 0.9118958866906113
+      },
+      {
+        "naicsId": "2581",
+        "rcaNumCompany": 0.3666924541313126
+      },
+      {
+        "naicsId": "2582",
+        "rcaNumCompany": 0.6957926602249059
+      },
+      {
+        "naicsId": "2583",
+        "rcaNumCompany": 0.26496538058313107
+      },
+      {
+        "naicsId": "2584",
+        "rcaNumCompany": 4.142667102121947
+      },
+      {
+        "naicsId": "2585",
+        "rcaNumCompany": 2.218817546141191
+      },
+      {
+        "naicsId": "2586",
+        "rcaNumCompany": 0.048889139222649106
+      },
+      {
+        "naicsId": "2587",
+        "rcaNumCompany": 0.7280225147281757
+      },
+      {
+        "naicsId": "2588",
+        "rcaNumCompany": 4.819376382477488
+      },
+      {
+        "naicsId": "2589",
+        "rcaNumCompany": 0.18620736474343919
+      },
+      {
+        "naicsId": "2590",
+        "rcaNumCompany": 1.2253638196046281
+      },
+      {
+        "naicsId": "2591",
+        "rcaNumCompany": 0.19199267792250924
+      },
+      {
+        "naicsId": "2592",
+        "rcaNumCompany": 11.747448450839563
+      },
+      {
+        "naicsId": "2593",
+        "rcaNumCompany": 0.33044654481194224
+      },
+      {
+        "naicsId": "2594",
+        "rcaNumCompany": 0.4165595908689485
+      },
+      {
+        "naicsId": "2595",
+        "rcaNumCompany": 3.102679587091879
+      },
+      {
+        "naicsId": "2596",
+        "rcaNumCompany": 0.3851021874135218
+      },
+      {
+        "naicsId": "2597",
+        "rcaNumCompany": 1.453756786065102
+      },
+      {
+        "naicsId": "2598",
+        "rcaNumCompany": 0.9039768465524324
+      },
+      {
+        "naicsId": "2599",
+        "rcaNumCompany": 2.644685273875128
+      },
+      {
+        "naicsId": "2600",
+        "rcaNumCompany": 1.4154355865586974
+      },
+      {
+        "naicsId": "2601",
+        "rcaNumCompany": 3.3393710648773354
+      },
+      {
+        "naicsId": "2602",
+        "rcaNumCompany": 1.9553244625331148
+      },
+      {
+        "naicsId": "2603",
+        "rcaNumCompany": 0.40325370875038513
+      },
+      {
+        "naicsId": "2604",
+        "rcaNumCompany": 2.5646369778257934
+      },
+      {
+        "naicsId": "2605",
+        "rcaNumCompany": 1.782832154336937
+      },
+      {
+        "naicsId": "2606",
+        "rcaNumCompany": 0.5237760166217629
+      },
+      {
+        "naicsId": "2607",
+        "rcaNumCompany": 0.09770041886594207
+      },
+      {
+        "naicsId": "2608",
+        "rcaNumCompany": 4.476029987641953
+      },
+      {
+        "naicsId": "2609",
+        "rcaNumCompany": 0.7090486806532167
+      },
+      {
+        "naicsId": "2610",
+        "rcaNumCompany": 0.9805681634116147
+      },
+      {
+        "naicsId": "2611",
+        "rcaNumCompany": 0.3903083832105097
+      },
+      {
+        "naicsId": "2612",
+        "rcaNumCompany": 1.0247248812849077
+      },
+      {
+        "naicsId": "2613",
+        "rcaNumCompany": 1.2435501257921013
+      },
+      {
+        "naicsId": "2614",
+        "rcaNumCompany": 0.13777226082673355
+      },
+      {
+        "naicsId": "2615",
+        "rcaNumCompany": 1.9530625080226012
+      },
+      {
+        "naicsId": "2616",
+        "rcaNumCompany": 0.9131353353507797
+      },
+      {
+        "naicsId": "2617",
+        "rcaNumCompany": 0.38094463016634184
+      },
+      {
+        "naicsId": "2618",
+        "rcaNumCompany": 0.42030015126904396
+      },
+      {
+        "naicsId": "2619",
+        "rcaNumCompany": 6.633308509824367
+      },
+      {
+        "naicsId": "2620",
+        "rcaNumCompany": 0.5320100267765644
+      },
+      {
+        "naicsId": "2621",
+        "rcaNumCompany": 2.0829871708253207
+      },
+      {
+        "naicsId": "2622",
+        "rcaNumCompany": 0.23123221073336245
+      },
+      {
+        "naicsId": "2623",
+        "rcaNumCompany": 1.4193870173170855
+      },
+      {
+        "naicsId": "2624",
+        "rcaNumCompany": 1.155157312878122
+      },
+      {
+        "naicsId": "2625",
+        "rcaNumCompany": 2.4688109471029063
+      },
+      {
+        "naicsId": "2626",
+        "rcaNumCompany": 3.4991495847279253
+      },
+      {
+        "naicsId": "2627",
+        "rcaNumCompany": 0.6090968322111074
+      },
+      {
+        "naicsId": "2628",
+        "rcaNumCompany": 0.717884579048853
+      },
+      {
+        "naicsId": "2629",
+        "rcaNumCompany": 0.2877124735136181
+      },
+      {
+        "naicsId": "2630",
+        "rcaNumCompany": 0.2970066153395478
+      },
+      {
+        "naicsId": "2631",
+        "rcaNumCompany": 1.7564508504998908
+      },
+      {
+        "naicsId": "2632",
+        "rcaNumCompany": 1.4621102938089197
+      },
+      {
+        "naicsId": "2633",
+        "rcaNumCompany": 0.2932056556343674
+      },
+      {
+        "naicsId": "2634",
+        "rcaNumCompany": 0.8799096773980946
+      },
+      {
+        "naicsId": "2635",
+        "rcaNumCompany": 2.061514484025755
+      },
+      {
+        "naicsId": "2637",
+        "rcaNumCompany": 1.6928756092780937
+      },
+      {
+        "naicsId": "2638",
+        "rcaNumCompany": 0.7934780432638008
+      },
+      {
+        "naicsId": "2639",
+        "rcaNumCompany": 0.4556266932085127
+      },
+      {
+        "naicsId": "2641",
+        "rcaNumCompany": 0.21138925402015735
+      },
+      {
+        "naicsId": "2642",
+        "rcaNumCompany": 0
+      },
+      {
+        "naicsId": "2643",
+        "rcaNumCompany": 0
+      },
+      {
+        "naicsId": "2645",
+        "rcaNumCompany": 0.08585206884017378
+      },
+      {
+        "naicsId": "2646",
+        "rcaNumCompany": 0.3119975525631981
+      },
+      {
+        "naicsId": "2647",
+        "rcaNumCompany": 0.3960504162335318
+      },
+      {
+        "naicsId": "2648",
+        "rcaNumCompany": 0.13710858011148674
+      },
+      {
+        "naicsId": "2650",
+        "rcaNumCompany": 2.3943681479464747
+      },
+      {
+        "naicsId": "2651",
+        "rcaNumCompany": 2.1064328042052147
+      },
+      {
+        "naicsId": "2652",
+        "rcaNumCompany": 2.2782625022060325
+      },
+      {
+        "naicsId": "2653",
+        "rcaNumCompany": 0.4095208103976573
+      },
+      {
+        "naicsId": "2654",
+        "rcaNumCompany": 2.080575428757145
+      },
+      {
+        "naicsId": "2655",
+        "rcaNumCompany": 1.095262268390448
+      },
+      {
+        "naicsId": "2656",
+        "rcaNumCompany": 0.9936443793588811
+      },
+      {
+        "naicsId": "2657",
+        "rcaNumCompany": 0.2595890514882529
+      },
+      {
+        "naicsId": "2658",
+        "rcaNumCompany": 1.0616740184638034
+      },
+      {
+        "naicsId": "2659",
+        "rcaNumCompany": 9.179864065544724
+      },
+      {
+        "naicsId": "2660",
+        "rcaNumCompany": 0.30983855241129915
+      },
+      {
+        "naicsId": "2661",
+        "rcaNumCompany": 0.1747131252151164
+      },
+      {
+        "naicsId": "2663",
+        "rcaNumCompany": 0.6840519169473602
+      },
+      {
+        "naicsId": "2664",
+        "rcaNumCompany": 1.828305658020341
+      },
+      {
+        "naicsId": "2665",
+        "rcaNumCompany": 0.23488751026437657
+      },
+      {
+        "naicsId": "2668",
+        "rcaNumCompany": 0.6822036037389333
+      },
+      {
+        "naicsId": "2669",
+        "rcaNumCompany": 9.921038454373944
+      },
+      {
+        "naicsId": "2670",
+        "rcaNumCompany": 3.5674256741860315
+      },
+      {
+        "naicsId": "2671",
+        "rcaNumCompany": 16.237172806574968
+      },
+      {
+        "naicsId": "2672",
+        "rcaNumCompany": 1.59244156691998
+      },
+      {
+        "naicsId": "2673",
+        "rcaNumCompany": 0.5782727437070134
+      },
+      {
+        "naicsId": "2674",
+        "rcaNumCompany": 0.8693926897488806
+      },
+      {
+        "naicsId": "2675",
+        "rcaNumCompany": 1.542873973012946
+      },
+      {
+        "naicsId": "2676",
+        "rcaNumCompany": 0.05873130928430263
+      },
+      {
+        "naicsId": "2677",
+        "rcaNumCompany": 1.7123900255233742
+      },
+      {
+        "naicsId": "2678",
+        "rcaNumCompany": 2.7339150026472385
+      },
+      {
+        "naicsId": "2679",
+        "rcaNumCompany": 3.406625147153944
+      },
+      {
+        "naicsId": "2680",
+        "rcaNumCompany": 0.7104726242727477
+      },
+      {
+        "naicsId": "2681",
+        "rcaNumCompany": 0.40778018311989506
+      },
+      {
+        "naicsId": "2682",
+        "rcaNumCompany": 0.02761135597105216
+      },
+      {
+        "naicsId": "2683",
+        "rcaNumCompany": 1.4235119050270966
+      },
+      {
+        "naicsId": "2684",
+        "rcaNumCompany": 0.43953245521851136
+      },
+      {
+        "naicsId": "2685",
+        "rcaNumCompany": 0.15103099070838388
+      },
+      {
+        "naicsId": "2686",
+        "rcaNumCompany": 6.756952582284028
+      },
+      {
+        "naicsId": "2687",
+        "rcaNumCompany": 0.8702731678819187
+      },
+      {
+        "naicsId": "2688",
+        "rcaNumCompany": 0.17551172679469532
+      },
+      {
+        "naicsId": "2690",
+        "rcaNumCompany": 2.0610872802616576
+      },
+      {
+        "naicsId": "2691",
+        "rcaNumCompany": 1.2208179339558236
+      },
+      {
+        "naicsId": "2692",
+        "rcaNumCompany": 0.674580004867659
+      },
+      {
+        "naicsId": "2693",
+        "rcaNumCompany": 0.7416935068671868
+      },
+      {
+        "naicsId": "2694",
+        "rcaNumCompany": 2.382157209147024
+      },
+      {
+        "naicsId": "2695",
+        "rcaNumCompany": 1.076265288017861
+      },
+      {
+        "naicsId": "2696",
+        "rcaNumCompany": 1.09283303992162
+      },
+      {
+        "naicsId": "2697",
+        "rcaNumCompany": 1.1724225495880374
+      },
+      {
+        "naicsId": "2698",
+        "rcaNumCompany": 0.8724156702407007
+      },
+      {
+        "naicsId": "2699",
+        "rcaNumCompany": 2.729937317836498
+      },
+      {
+        "naicsId": "2700",
+        "rcaNumCompany": 1.7745617867640582
+      },
+      {
+        "naicsId": "2702",
+        "rcaNumCompany": 3.547238140055633
+      },
+      {
+        "naicsId": "2703",
+        "rcaNumCompany": 0.47478513422936613
+      },
+      {
+        "naicsId": "2704",
+        "rcaNumCompany": 9.677232216364754
+      },
+      {
+        "naicsId": "2705",
+        "rcaNumCompany": 5.012871568067957
+      },
+      {
+        "naicsId": "2706",
+        "rcaNumCompany": 1.2046704583976655
+      },
+      {
+        "naicsId": "2707",
+        "rcaNumCompany": 3.642043143466815
+      },
+      {
+        "naicsId": "2708",
+        "rcaNumCompany": 1.4158430478888364
+      },
+      {
+        "naicsId": "2709",
+        "rcaNumCompany": 5.1596355993212075
+      },
+      {
+        "naicsId": "2710",
+        "rcaNumCompany": 1.3719292073965805
+      },
+      {
+        "naicsId": "2711",
+        "rcaNumCompany": 2.955500839188697
+      },
+      {
+        "naicsId": "2712",
+        "rcaNumCompany": 2.2707975303759125
+      },
+      {
+        "naicsId": "2713",
+        "rcaNumCompany": 1.7531744098437057
+      },
+      {
+        "naicsId": "2714",
+        "rcaNumCompany": 2.3744229324939496
+      },
+      {
+        "naicsId": "2715",
+        "rcaNumCompany": 0.4824624536081742
+      },
+      {
+        "naicsId": "2716",
+        "rcaNumCompany": 2.441862959648808
+      },
+      {
+        "naicsId": "2717",
+        "rcaNumCompany": 0.8992380474172552
+      },
+      {
+        "naicsId": "2718",
+        "rcaNumCompany": 0.26524412617111875
+      },
+      {
+        "naicsId": "2719",
+        "rcaNumCompany": 5.7861144016564525
+      },
+      {
+        "naicsId": "2720",
+        "rcaNumCompany": 1.1214687968773605
+      },
+      {
+        "naicsId": "2721",
+        "rcaNumCompany": 0.7392735610649237
+      },
+      {
+        "naicsId": "2722",
+        "rcaNumCompany": 0.39962965202630407
+      },
+      {
+        "naicsId": "2723",
+        "rcaNumCompany": 1.296009599243793
+      },
+      {
+        "naicsId": "2724",
+        "rcaNumCompany": 11.250214952906928
+      },
+      {
+        "naicsId": "2725",
+        "rcaNumCompany": 5.601800700209628
+      },
+      {
+        "naicsId": "2728",
+        "rcaNumCompany": 1.3579328180056174
+      },
+      {
+        "naicsId": "2729",
+        "rcaNumCompany": 0.6425440883363331
+      },
+      {
+        "naicsId": "2730",
+        "rcaNumCompany": 4.007977328506411
+      },
+      {
+        "naicsId": "2731",
+        "rcaNumCompany": 1.133832966214165
+      },
+      {
+        "naicsId": "2733",
+        "rcaNumCompany": 0.4180954334660319
+      },
+      {
+        "naicsId": "2734",
+        "rcaNumCompany": 2.476578125233434
+      },
+      {
+        "naicsId": "2735",
+        "rcaNumCompany": 1.143512402447307
+      },
+      {
+        "naicsId": "2736",
+        "rcaNumCompany": 2.361365463161331
+      },
+      {
+        "naicsId": "2737",
+        "rcaNumCompany": 9.328643523568635
+      },
+      {
+        "naicsId": "2738",
+        "rcaNumCompany": 1.5548877365536367
+      },
+      {
+        "naicsId": "2739",
+        "rcaNumCompany": 0.06070575771628924
+      },
+      {
+        "naicsId": "2740",
+        "rcaNumCompany": 0.48950620027318376
+      },
+      {
+        "naicsId": "2741",
+        "rcaNumCompany": 0.33168691476331186
+      },
+      {
+        "naicsId": "2742",
+        "rcaNumCompany": 2.9325592615737577
+      },
+      {
+        "naicsId": "2743",
+        "rcaNumCompany": 3.4462520885552688
+      },
+      {
+        "naicsId": "2744",
+        "rcaNumCompany": 2.5451378114796848
+      },
+      {
+        "naicsId": "2745",
+        "rcaNumCompany": 6.587932878839566
+      },
+      {
+        "naicsId": "2746",
+        "rcaNumCompany": 0.2703451543333838
+      },
+      {
+        "naicsId": "2747",
+        "rcaNumCompany": 1.0342395299926506
+      },
+      {
+        "naicsId": "2748",
+        "rcaNumCompany": 2.2338511871846887
+      },
+      {
+        "naicsId": "2749",
+        "rcaNumCompany": 1.515771059620683
+      },
+      {
+        "naicsId": "2750",
+        "rcaNumCompany": 1.2321041499201102
+      },
+      {
+        "naicsId": "2751",
+        "rcaNumCompany": 0.6857943662487818
+      },
+      {
+        "naicsId": "2752",
+        "rcaNumCompany": 7.780024076682303
+      },
+      {
+        "naicsId": "2753",
+        "rcaNumCompany": 1.8941587661333221
+      },
+      {
+        "naicsId": "2754",
+        "rcaNumCompany": 4.300771281281514
+      },
+      {
+        "naicsId": "2755",
+        "rcaNumCompany": 3.9745775174355242
+      },
+      {
+        "naicsId": "2756",
+        "rcaNumCompany": 5.338118709548441
+      },
+      {
+        "naicsId": "2757",
+        "rcaNumCompany": 7.024440094848695
+      },
+      {
+        "naicsId": "2758",
+        "rcaNumCompany": 0.3332523414026595
+      },
+      {
+        "naicsId": "2759",
+        "rcaNumCompany": 3.354689280771268
+      },
+      {
+        "naicsId": "2760",
+        "rcaNumCompany": 1.3111583250072467
+      },
+      {
+        "naicsId": "2761",
+        "rcaNumCompany": 9.978175741694393
+      },
+      {
+        "naicsId": "2762",
+        "rcaNumCompany": 0.630505619446456
+      },
+      {
+        "naicsId": "2763",
+        "rcaNumCompany": 3.7101636785709995
+      },
+      {
+        "naicsId": "2764",
+        "rcaNumCompany": 4.883374076460644
+      },
+      {
+        "naicsId": "2765",
+        "rcaNumCompany": 3.5178727394619034
+      },
+      {
+        "naicsId": "2766",
+        "rcaNumCompany": 0.14788633072993843
+      },
+      {
+        "naicsId": "2767",
+        "rcaNumCompany": 1.3299267492334945
+      },
+      {
+        "naicsId": "2768",
+        "rcaNumCompany": 7.050888118269286
+      },
+      {
+        "naicsId": "2769",
+        "rcaNumCompany": 1.7713390898111805
+      },
+      {
+        "naicsId": "2770",
+        "rcaNumCompany": 4.961347009813488
+      },
+      {
+        "naicsId": "2771",
+        "rcaNumCompany": 7.224824775998558
+      },
+      {
+        "naicsId": "2772",
+        "rcaNumCompany": 0.8738757921371071
+      },
+      {
+        "naicsId": "2773",
+        "rcaNumCompany": 1.2541048119688767
+      },
+      {
+        "naicsId": "2774",
+        "rcaNumCompany": 1.3211681143626006
+      },
+      {
+        "naicsId": "2775",
+        "rcaNumCompany": 2.5548920238184722
+      },
+      {
+        "naicsId": "2776",
+        "rcaNumCompany": 1.6493073062534254
+      },
+      {
+        "naicsId": "2777",
+        "rcaNumCompany": 1.4934322057344918
+      },
+      {
+        "naicsId": "2778",
+        "rcaNumCompany": 0.21595861776758102
+      },
+      {
+        "naicsId": "2779",
+        "rcaNumCompany": 1.9309997348270524
+      },
+      {
+        "naicsId": "2780",
+        "rcaNumCompany": 3.489992327501883
+      },
+      {
+        "naicsId": "2781",
+        "rcaNumCompany": 3.3292364030719406
+      },
+      {
+        "naicsId": "2782",
+        "rcaNumCompany": 0.2116706984683463
+      },
+      {
+        "naicsId": "2783",
+        "rcaNumCompany": 0.19278912109152022
+      },
+      {
+        "naicsId": "2784",
+        "rcaNumCompany": 0.7237629611692574
+      },
+      {
+        "naicsId": "2785",
+        "rcaNumCompany": 0.8755914287152369
+      },
+      {
+        "naicsId": "2786",
+        "rcaNumCompany": 0.6289591599295948
+      },
+      {
+        "naicsId": "2787",
+        "rcaNumCompany": 3.302193614799864
+      },
+      {
+        "naicsId": "2788",
+        "rcaNumCompany": 1.064108056437019
+      },
+      {
+        "naicsId": "2789",
+        "rcaNumCompany": 1.1586027683610933
+      },
+      {
+        "naicsId": "2790",
+        "rcaNumCompany": 0.9431672101355262
+      },
+      {
+        "naicsId": "2791",
+        "rcaNumCompany": 5.307892675590379
+      },
+      {
+        "naicsId": "2792",
+        "rcaNumCompany": 1.0006412572839773
+      },
+      {
+        "naicsId": "2793",
+        "rcaNumCompany": 5.025118620303273
+      },
+      {
+        "naicsId": "2794",
+        "rcaNumCompany": 0.28672199335404974
+      },
+      {
+        "naicsId": "2795",
+        "rcaNumCompany": 1.1621033674706445
+      },
+      {
+        "naicsId": "2796",
+        "rcaNumCompany": 3.6495849350784697
+      },
+      {
+        "naicsId": "2797",
+        "rcaNumCompany": 0.6061069936850105
+      },
+      {
+        "naicsId": "2798",
+        "rcaNumCompany": 0.3348545161209416
+      },
+      {
+        "naicsId": "2799",
+        "rcaNumCompany": 4.504121530567959
+      },
+      {
+        "naicsId": "2801",
+        "rcaNumCompany": 0.8416185948488548
+      },
+      {
+        "naicsId": "2802",
+        "rcaNumCompany": 2.0312303285373
+      },
+      {
+        "naicsId": "2803",
+        "rcaNumCompany": 3.648132476035218
+      },
+      {
+        "naicsId": "2804",
+        "rcaNumCompany": 1.5712878583354681
+      },
+      {
+        "naicsId": "2805",
+        "rcaNumCompany": 1.1295909193507976
+      },
+      {
+        "naicsId": "2806",
+        "rcaNumCompany": 1.4761406696819364
+      },
+      {
+        "naicsId": "2807",
+        "rcaNumCompany": 1.1071377229299355
+      },
+      {
+        "naicsId": "2808",
+        "rcaNumCompany": 0.5703879011069772
+      },
+      {
+        "naicsId": "2809",
+        "rcaNumCompany": 0.38427722844892737
+      },
+      {
+        "naicsId": "2810",
+        "rcaNumCompany": 4.628621919038838
+      },
+      {
+        "naicsId": "2811",
+        "rcaNumCompany": 0.7932536063200684
+      },
+      {
+        "naicsId": "2812",
+        "rcaNumCompany": 4.131605407055959
+      },
+      {
+        "naicsId": "2813",
+        "rcaNumCompany": 5.261733411869817
+      },
+      {
+        "naicsId": "2814",
+        "rcaNumCompany": 3.29318484558183
+      },
+      {
+        "naicsId": "2815",
+        "rcaNumCompany": 2.5155655131874566
+      },
+      {
+        "naicsId": "2816",
+        "rcaNumCompany": 4.8412308696566715
+      },
+      {
+        "naicsId": "2817",
+        "rcaNumCompany": 4.898719269203026
+      },
+      {
+        "naicsId": "2819",
+        "rcaNumCompany": 20.52211075345332
+      },
+      {
+        "naicsId": "2820",
+        "rcaNumCompany": 0.946734927028673
+      },
+      {
+        "naicsId": "2821",
+        "rcaNumCompany": 5.989077221735848
+      },
+      {
+        "naicsId": "2822",
+        "rcaNumCompany": 0.22572340731799584
+      },
+      {
+        "naicsId": "2823",
+        "rcaNumCompany": 0.3856412537776361
+      },
+      {
+        "naicsId": "2824",
+        "rcaNumCompany": 2.6338136730184982
+      },
+      {
+        "naicsId": "2825",
+        "rcaNumCompany": 1.4215114297263198
+      },
+      {
+        "naicsId": "2826",
+        "rcaNumCompany": 0.6259789486985761
+      },
+      {
+        "naicsId": "2827",
+        "rcaNumCompany": 3.1789345689669624
+      },
+      {
+        "naicsId": "2828",
+        "rcaNumCompany": 4.083525327558122
+      },
+      {
+        "naicsId": "2829",
+        "rcaNumCompany": 0.26287366341833235
+      },
+      {
+        "naicsId": "2830",
+        "rcaNumCompany": 0.5355916174863311
+      },
+      {
+        "naicsId": "2831",
+        "rcaNumCompany": 2.8096214193194595
+      },
+      {
+        "naicsId": "2832",
+        "rcaNumCompany": 0.5736275273117601
+      },
+      {
+        "naicsId": "2833",
+        "rcaNumCompany": 1.6638247017865817
+      },
+      {
+        "naicsId": "2834",
+        "rcaNumCompany": 1.2483752102148227
+      },
+      {
+        "naicsId": "2835",
+        "rcaNumCompany": 1.7858939452931737
+      },
+      {
+        "naicsId": "2836",
+        "rcaNumCompany": 0.24963813651135133
+      },
+      {
+        "naicsId": "2837",
+        "rcaNumCompany": 0.6709456676578589
+      },
+      {
+        "naicsId": "2839",
+        "rcaNumCompany": 1.5440515080896196
+      },
+      {
+        "naicsId": "2840",
+        "rcaNumCompany": 0.5451352219679851
+      },
+      {
+        "naicsId": "2841",
+        "rcaNumCompany": 0.8403163690498882
+      },
+      {
+        "naicsId": "2842",
+        "rcaNumCompany": 10.147675213584542
+      },
+      {
+        "naicsId": "2843",
+        "rcaNumCompany": 1.0005514580727948
+      },
+      {
+        "naicsId": "2844",
+        "rcaNumCompany": 1.8542653732457821
+      },
+      {
+        "naicsId": "2845",
+        "rcaNumCompany": 5.6545535815062085
+      },
+      {
+        "naicsId": "2846",
+        "rcaNumCompany": 3.0709716371639737
+      },
+      {
+        "naicsId": "2847",
+        "rcaNumCompany": 2.261821432602484
+      },
+      {
+        "naicsId": "2848",
+        "rcaNumCompany": 3.6474925845792336
+      },
+      {
+        "naicsId": "2849",
+        "rcaNumCompany": 2.3426565808438515
+      },
+      {
+        "naicsId": "2850",
+        "rcaNumCompany": 0.33026074963019386
+      },
+      {
+        "naicsId": "2851",
+        "rcaNumCompany": 0.44357125400372194
+      },
+      {
+        "naicsId": "2852",
+        "rcaNumCompany": 4.080338807599045
+      },
+      {
+        "naicsId": "2853",
+        "rcaNumCompany": 0.16359050476893242
+      },
+      {
+        "naicsId": "2854",
+        "rcaNumCompany": 0.2684570014418867
+      },
+      {
+        "naicsId": "2855",
+        "rcaNumCompany": 0.6653575812279353
+      },
+      {
+        "naicsId": "2856",
+        "rcaNumCompany": 1.0998266967840042
+      },
+      {
+        "naicsId": "2857",
+        "rcaNumCompany": 2.5570708503780994
+      },
+      {
+        "naicsId": "2858",
+        "rcaNumCompany": 1.0258384791136739
+      },
+      {
+        "naicsId": "2859",
+        "rcaNumCompany": 3.6454319912674618
+      },
+      {
+        "naicsId": "2860",
+        "rcaNumCompany": 2.202527557110537
+      },
+      {
+        "naicsId": "2861",
+        "rcaNumCompany": 0.11075870837880492
+      },
+      {
+        "naicsId": "2862",
+        "rcaNumCompany": 1.095193688053678
+      },
+      {
+        "naicsId": "2863",
+        "rcaNumCompany": 5.810530144056823
+      },
+      {
+        "naicsId": "2864",
+        "rcaNumCompany": 0.9237199282672239
+      },
+      {
+        "naicsId": "2865",
+        "rcaNumCompany": 1.0368475866109181
+      },
+      {
+        "naicsId": "2866",
+        "rcaNumCompany": 2.55144016354389
+      },
+      {
+        "naicsId": "2867",
+        "rcaNumCompany": 3.689553760329337
+      },
+      {
+        "naicsId": "2868",
+        "rcaNumCompany": 7.198849163695954
+      },
+      {
+        "naicsId": "2869",
+        "rcaNumCompany": 1.8184858345139658
+      },
+      {
+        "naicsId": "2870",
+        "rcaNumCompany": 0.8269842218429414
+      },
+      {
+        "naicsId": "2871",
+        "rcaNumCompany": 3.9919356430433632
+      },
+      {
+        "naicsId": "2872",
+        "rcaNumCompany": 5.84278772203571
+      },
+      {
+        "naicsId": "2874",
+        "rcaNumCompany": 4.748845864987899
+      },
+      {
+        "naicsId": "2875",
+        "rcaNumCompany": 2.227071912650292
+      },
+      {
+        "naicsId": "2876",
+        "rcaNumCompany": 2.5317106791449335
+      },
+      {
+        "naicsId": "2878",
+        "rcaNumCompany": 0.3165010685710221
+      },
+      {
+        "naicsId": "2879",
+        "rcaNumCompany": 5.940343293206885
+      },
+      {
+        "naicsId": "2880",
+        "rcaNumCompany": 3.5595331395086283
+      },
+      {
+        "naicsId": "2881",
+        "rcaNumCompany": 3.8772450207954723
+      },
+      {
+        "naicsId": "2882",
+        "rcaNumCompany": 0.1319718962750404
+      },
+      {
+        "naicsId": "2883",
+        "rcaNumCompany": 2.0539859626731807
+      },
+      {
+        "naicsId": "2884",
+        "rcaNumCompany": 0.5799542134878164
+      },
+      {
+        "naicsId": "2885",
+        "rcaNumCompany": 3.88342311793448
+      },
+      {
+        "naicsId": "2886",
+        "rcaNumCompany": 0.9840421890262385
+      },
+      {
+        "naicsId": "2887",
+        "rcaNumCompany": 0.581024605917433
+      },
+      {
+        "naicsId": "2888",
+        "rcaNumCompany": 3.401498898642495
+      },
+      {
+        "naicsId": "2889",
+        "rcaNumCompany": 4.4154072241993925
+      },
+      {
+        "naicsId": "2890",
+        "rcaNumCompany": 2.1604793595513634
+      },
+      {
+        "naicsId": "2891",
+        "rcaNumCompany": 8.973279303167319
+      },
+      {
+        "naicsId": "2892",
+        "rcaNumCompany": 1.0311989666182355
+      },
+      {
+        "naicsId": "2893",
+        "rcaNumCompany": 3.650314523487666
+      },
+      {
+        "naicsId": "2894",
+        "rcaNumCompany": 3.3546271062349646
+      },
+      {
+        "naicsId": "2895",
+        "rcaNumCompany": 4.8059867352626515
+      },
+      {
+        "naicsId": "2896",
+        "rcaNumCompany": 4.838939907630836
+      },
+      {
+        "naicsId": "2897",
+        "rcaNumCompany": 1.7207042834926034
+      },
+      {
+        "naicsId": "2898",
+        "rcaNumCompany": 0.5865030332306724
+      },
+      {
+        "naicsId": "2899",
+        "rcaNumCompany": 6.5214797403598395
+      },
+      {
+        "naicsId": "2900",
+        "rcaNumCompany": 2.78763866319207
+      },
+      {
+        "naicsId": "2901",
+        "rcaNumCompany": 3.7584903961403153
+      },
+      {
+        "naicsId": "2902",
+        "rcaNumCompany": 2.1822580349103786
+      },
+      {
+        "naicsId": "2903",
+        "rcaNumCompany": 3.8817529894274756
+      },
+      {
+        "naicsId": "2904",
+        "rcaNumCompany": 5.834233826065716
+      },
+      {
+        "naicsId": "2905",
+        "rcaNumCompany": 11.137470095958117
+      },
+      {
+        "naicsId": "2906",
+        "rcaNumCompany": 4.000882364369875
+      },
+      {
+        "naicsId": "2907",
+        "rcaNumCompany": 5.133646220839781
+      },
+      {
+        "naicsId": "2908",
+        "rcaNumCompany": 1.9980551002861162
+      },
+      {
+        "naicsId": "2909",
+        "rcaNumCompany": 4.001966174831716
+      },
+      {
+        "naicsId": "2910",
+        "rcaNumCompany": 7.999643669531485
+      },
+      {
+        "naicsId": "2911",
+        "rcaNumCompany": 7.439697489401184
+      },
+      {
+        "naicsId": "2912",
+        "rcaNumCompany": 45.519186220931424
+      },
+      {
+        "naicsId": "2913",
+        "rcaNumCompany": 3.822241793770748
+      },
+      {
+        "naicsId": "2914",
+        "rcaNumCompany": 0.7969540706820328
+      },
+      {
+        "naicsId": "2915",
+        "rcaNumCompany": 1.1032082008617596
+      },
+      {
+        "naicsId": "2916",
+        "rcaNumCompany": 4.037777513295807
+      },
+      {
+        "naicsId": "2917",
+        "rcaNumCompany": 2.075336203124939
+      },
+      {
+        "naicsId": "2918",
+        "rcaNumCompany": 3.3007719937839712
+      },
+      {
+        "naicsId": "2919",
+        "rcaNumCompany": 4.2926370370268225
+      },
+      {
+        "naicsId": "2920",
+        "rcaNumCompany": 2.1462043420537467
+      },
+      {
+        "naicsId": "2921",
+        "rcaNumCompany": 1.4379203646355652
+      },
+      {
+        "naicsId": "2922",
+        "rcaNumCompany": 3.0824035660265867
+      },
+      {
+        "naicsId": "2923",
+        "rcaNumCompany": 1.0048922022751334
+      },
+      {
+        "naicsId": "2924",
+        "rcaNumCompany": 2.4284494187149366
+      },
+      {
+        "naicsId": "2925",
+        "rcaNumCompany": 4.782725859268431
+      },
+      {
+        "naicsId": "2926",
+        "rcaNumCompany": 10.733692708534292
+      },
+      {
+        "naicsId": "2927",
+        "rcaNumCompany": 6.380487455584569
+      },
+      {
+        "naicsId": "2928",
+        "rcaNumCompany": 1.9559389632493225
+      },
+      {
+        "naicsId": "2929",
+        "rcaNumCompany": 0.5844441442150833
+      },
+      {
+        "naicsId": "2930",
+        "rcaNumCompany": 5.799719031084809
+      },
+      {
+        "naicsId": "2931",
+        "rcaNumCompany": 6.198166366033547
+      },
+      {
+        "naicsId": "2932",
+        "rcaNumCompany": 2.7260825198931538
+      },
+      {
+        "naicsId": "2933",
+        "rcaNumCompany": 3.5432280194192662
+      },
+      {
+        "naicsId": "2934",
+        "rcaNumCompany": 12.425378258390667
+      },
+      {
+        "naicsId": "2935",
+        "rcaNumCompany": 6.618301024508022
+      },
+      {
+        "naicsId": "2936",
+        "rcaNumCompany": 3.976852604738006
+      },
+      {
+        "naicsId": "2937",
+        "rcaNumCompany": 0.23850036760750826
+      },
+      {
+        "naicsId": "2938",
+        "rcaNumCompany": 3.5196793107487596
+      },
+      {
+        "naicsId": "2939",
+        "rcaNumCompany": 2.1413675638311487
+      },
+      {
+        "naicsId": "2941",
+        "rcaNumCompany": 5.594154173806294
+      },
+      {
+        "naicsId": "2942",
+        "rcaNumCompany": 4.007318962121666
+      },
+      {
+        "naicsId": "2943",
+        "rcaNumCompany": 5.31842708277418
+      },
+      {
+        "naicsId": "2944",
+        "rcaNumCompany": 0.5549195151229431
+      },
+      {
+        "naicsId": "2945",
+        "rcaNumCompany": 0.20459885207160175
+      },
+      {
+        "naicsId": "2946",
+        "rcaNumCompany": 1.6021413131660778
+      },
+      {
+        "naicsId": "2947",
+        "rcaNumCompany": 1.8581690898210363
+      },
+      {
+        "naicsId": "2948",
+        "rcaNumCompany": 0.11942311283855503
+      },
+      {
+        "naicsId": "2949",
+        "rcaNumCompany": 1.5291361782103639
+      },
+      {
+        "naicsId": "2950",
+        "rcaNumCompany": 4.456010692436273
+      },
+      {
+        "naicsId": "2951",
+        "rcaNumCompany": 14.995566911207845
+      },
+      {
+        "naicsId": "2952",
+        "rcaNumCompany": 2.122508987060054
+      },
+      {
+        "naicsId": "2953",
+        "rcaNumCompany": 4.589645598462248
+      },
+      {
+        "naicsId": "2954",
+        "rcaNumCompany": 0.4049811163556937
+      },
+      {
+        "naicsId": "2955",
+        "rcaNumCompany": 0.20148997687475717
+      },
+      {
+        "naicsId": "2956",
+        "rcaNumCompany": 2.1509478329651066
+      },
+      {
+        "naicsId": "2957",
+        "rcaNumCompany": 0.05344360298217893
+      },
+      {
+        "naicsId": "2958",
+        "rcaNumCompany": 3.1079610491932943
+      },
+      {
+        "naicsId": "2960",
+        "rcaNumCompany": 5.843335661464966
+      },
+      {
+        "naicsId": "2961",
+        "rcaNumCompany": 2.6177752096163163
+      },
+      {
+        "naicsId": "2962",
+        "rcaNumCompany": 0.5708040187831805
+      },
+      {
+        "naicsId": "2963",
+        "rcaNumCompany": 2.90049397292684
+      },
+      {
+        "naicsId": "2964",
+        "rcaNumCompany": 0.808466007879006
+      },
+      {
+        "naicsId": "2965",
+        "rcaNumCompany": 3.613901570210917
+      },
+      {
+        "naicsId": "2966",
+        "rcaNumCompany": 6.427323244834947
+      },
+      {
+        "naicsId": "2967",
+        "rcaNumCompany": 0.3096199251516242
+      },
+      {
+        "naicsId": "2968",
+        "rcaNumCompany": 0.21799280529633258
+      },
+      {
+        "naicsId": "2969",
+        "rcaNumCompany": 1.9829779371153373
+      },
+      {
+        "naicsId": "2970",
+        "rcaNumCompany": 0.3194190774662604
+      },
+      {
+        "naicsId": "2971",
+        "rcaNumCompany": 1.3176977715461917
+      },
+      {
+        "naicsId": "2972",
+        "rcaNumCompany": 3.062301703902515
+      },
+      {
+        "naicsId": "2973",
+        "rcaNumCompany": 1.694182849130818
+      },
+      {
+        "naicsId": "2974",
+        "rcaNumCompany": 0.6969065758088578
+      },
+      {
+        "naicsId": "2975",
+        "rcaNumCompany": 0.8698044826354819
+      },
+      {
+        "naicsId": "2976",
+        "rcaNumCompany": 3.6570603016618763
+      },
+      {
+        "naicsId": "2977",
+        "rcaNumCompany": 0.47320189577479166
+      },
+      {
+        "naicsId": "2978",
+        "rcaNumCompany": 2.243319825791829
+      },
+      {
+        "naicsId": "2979",
+        "rcaNumCompany": 1.4884480477280695
+      },
+      {
+        "naicsId": "2980",
+        "rcaNumCompany": 0.4315184642858047
+      },
+      {
+        "naicsId": "2981",
+        "rcaNumCompany": 2.2566317165216647
+      },
+      {
+        "naicsId": "2982",
+        "rcaNumCompany": 0.5368634632447584
+      },
+      {
+        "naicsId": "2983",
+        "rcaNumCompany": 1.2812542671352252
+      },
+      {
+        "naicsId": "2984",
+        "rcaNumCompany": 5.4089124287263335
+      },
+      {
+        "naicsId": "2985",
+        "rcaNumCompany": 2.959897080232184
+      },
+      {
+        "naicsId": "2986",
+        "rcaNumCompany": 1.2932532242887587
+      },
+      {
+        "naicsId": "2987",
+        "rcaNumCompany": 0.7079298002435663
+      },
+      {
+        "naicsId": "2988",
+        "rcaNumCompany": 0.3478700626839463
+      },
+      {
+        "naicsId": "2989",
+        "rcaNumCompany": 0.2359796097180845
+      },
+      {
+        "naicsId": "2990",
+        "rcaNumCompany": 0.6576639057627126
+      },
+      {
+        "naicsId": "2991",
+        "rcaNumCompany": 0.29945660829824183
+      },
+      {
+        "naicsId": "2992",
+        "rcaNumCompany": 1.4607464863957331
+      },
+      {
+        "naicsId": "2993",
+        "rcaNumCompany": 1.0122707906463964
+      },
+      {
+        "naicsId": "2994",
+        "rcaNumCompany": 0.7572696716198413
+      },
+      {
+        "naicsId": "2995",
+        "rcaNumCompany": 0.9884268587712889
+      },
+      {
+        "naicsId": "2996",
+        "rcaNumCompany": 1.6376378254820712
+      },
+      {
+        "naicsId": "2997",
+        "rcaNumCompany": 1.9259292850831284
+      },
+      {
+        "naicsId": "2998",
+        "rcaNumCompany": 1.6894983966725403
+      },
+      {
+        "naicsId": "2999",
+        "rcaNumCompany": 0.843101212325033
+      },
+      {
+        "naicsId": "3000",
+        "rcaNumCompany": 5.703073372988951
+      },
+      {
+        "naicsId": "3001",
+        "rcaNumCompany": 6.600381436896538
+      },
+      {
+        "naicsId": "3002",
+        "rcaNumCompany": 4.9849552824933125
+      },
+      {
+        "naicsId": "3003",
+        "rcaNumCompany": 1.748853437209199
+      },
+      {
+        "naicsId": "3004",
+        "rcaNumCompany": 6.720258634885578
+      },
+      {
+        "naicsId": "3005",
+        "rcaNumCompany": 7.248085650901457
+      },
+      {
+        "naicsId": "3006",
+        "rcaNumCompany": 2.414561090887931
+      },
+      {
+        "naicsId": "3007",
+        "rcaNumCompany": 1.7451215316770674
+      },
+      {
+        "naicsId": "3008",
+        "rcaNumCompany": 0.6374567559016225
+      },
+      {
+        "naicsId": "3009",
+        "rcaNumCompany": 5.303741175505747
+      },
+      {
+        "naicsId": "3010",
+        "rcaNumCompany": 0.8071432855991021
+      },
+      {
+        "naicsId": "3012",
+        "rcaNumCompany": 1.1114108975257102
+      },
+      {
+        "naicsId": "3013",
+        "rcaNumCompany": 0.6772678767149234
+      },
+      {
+        "naicsId": "3014",
+        "rcaNumCompany": 2.5619040502323203
+      },
+      {
+        "naicsId": "3015",
+        "rcaNumCompany": 2.395668377474147
+      },
+      {
+        "naicsId": "3016",
+        "rcaNumCompany": 7.114029797744517
+      },
+      {
+        "naicsId": "3017",
+        "rcaNumCompany": 9.416166479074716
+      },
+      {
+        "naicsId": "3019",
+        "rcaNumCompany": 2.118239719647028
+      },
+      {
+        "naicsId": "3020",
+        "rcaNumCompany": 1.623775641366031
+      },
+      {
+        "naicsId": "3021",
+        "rcaNumCompany": 3.55915178147091
+      },
+      {
+        "naicsId": "3022",
+        "rcaNumCompany": 0.9628370186978804
+      },
+      {
+        "naicsId": "3023",
+        "rcaNumCompany": 2.4469103519424706
+      },
+      {
+        "naicsId": "3024",
+        "rcaNumCompany": 2.1604114626513145
+      },
+      {
+        "naicsId": "3025",
+        "rcaNumCompany": 0.6915576957050935
+      },
+      {
+        "naicsId": "3026",
+        "rcaNumCompany": 1.297142328667661
+      },
+      {
+        "naicsId": "3028",
+        "rcaNumCompany": 2.7460598770331783
+      },
+      {
+        "naicsId": "3029",
+        "rcaNumCompany": 2.517083734199347
+      },
+      {
+        "naicsId": "3030",
+        "rcaNumCompany": 3.6884330917340744
+      },
+      {
+        "naicsId": "3031",
+        "rcaNumCompany": 0.5758443017386902
+      },
+      {
+        "naicsId": "3032",
+        "rcaNumCompany": 9.375926451386364
+      },
+      {
+        "naicsId": "3033",
+        "rcaNumCompany": 0.6206296561153931
+      },
+      {
+        "naicsId": "3034",
+        "rcaNumCompany": 4.541552701702523
+      },
+      {
+        "naicsId": "3035",
+        "rcaNumCompany": 3.58789402372194
+      },
+      {
+        "naicsId": "3036",
+        "rcaNumCompany": 1.9640836120722953
+      },
+      {
+        "naicsId": "3037",
+        "rcaNumCompany": 3.2487168651891545
+      },
+      {
+        "naicsId": "3038",
+        "rcaNumCompany": 4.903501764805513
+      },
+      {
+        "naicsId": "3039",
+        "rcaNumCompany": 4.03904722938119
+      },
+      {
+        "naicsId": "3040",
+        "rcaNumCompany": 0.45850925592986613
+      },
+      {
+        "naicsId": "3041",
+        "rcaNumCompany": 1.59720942005599
+      },
+      {
+        "naicsId": "3042",
+        "rcaNumCompany": 3.128856273220875
+      },
+      {
+        "naicsId": "3043",
+        "rcaNumCompany": 3.1834904483451343
+      },
+      {
+        "naicsId": "3044",
+        "rcaNumCompany": 4.784928273417524
+      },
+      {
+        "naicsId": "3045",
+        "rcaNumCompany": 0.9535796812142201
+      },
+      {
+        "naicsId": "3046",
+        "rcaNumCompany": 3.8971983615610513
+      },
+      {
+        "naicsId": "3047",
+        "rcaNumCompany": 10.724697993974068
+      },
+      {
+        "naicsId": "3048",
+        "rcaNumCompany": 3.6415428628152395
+      },
+      {
+        "naicsId": "3049",
+        "rcaNumCompany": 0.6979331417087881
+      },
+      {
+        "naicsId": "3050",
+        "rcaNumCompany": 5.761650808340403
+      },
+      {
+        "naicsId": "3051",
+        "rcaNumCompany": 0.8016931021770071
+      },
+      {
+        "naicsId": "3052",
+        "rcaNumCompany": 1.3655394956168523
+      },
+      {
+        "naicsId": "3053",
+        "rcaNumCompany": 3.5738178687480198
+      },
+      {
+        "naicsId": "3055",
+        "rcaNumCompany": 3.214152456590837
+      },
+      {
+        "naicsId": "3056",
+        "rcaNumCompany": 1.8612497791105989
+      }
+    ]
+  }
+}

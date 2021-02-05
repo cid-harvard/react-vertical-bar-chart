@@ -1,5 +1,5 @@
 import React from 'react';
-import BostonAracaju6Digit from './components/BostonAracaju6Digit';
+import Boston6DigitRCA from './components/Boston6DigitRCA';
 import {
   Route,
   Switch,
@@ -11,7 +11,7 @@ const App = () => {
   return (
     <HashRouter>
       <Switch>
-        <Route component={BostonAracaju6Digit} />
+        <Route component={Boston6DigitRCA} />
       </Switch>
     </HashRouter>
   )
