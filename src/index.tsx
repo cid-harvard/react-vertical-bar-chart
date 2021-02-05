@@ -1,10 +1,24 @@
-import * as React from 'react'
-import styles from './styles.module.css'
+import React from 'react'
+import Root, {
+  Props as VerticalBarChartProps,
+} from './components/Root';
+import {
+  BarDatum,
+  RowHoverEvent,
+  Layout,
+} from './components/Utils';
 
-interface Props {
-  text: string
+const VerticalBarChart = (props: VerticalBarChartProps) => {
+  return (
+    <Root {...props} />
+  );
 }
 
-export const ExampleComponent = ({ text }: Props) => {
-  return <div className={styles.test}>Example Component: {text}</div>
+export {
+  VerticalBarChartProps,
+  BarDatum,
+  RowHoverEvent,
+  Layout,
 }
+
+export default VerticalBarChart;
