@@ -138,6 +138,7 @@ export interface Props {
   layout?: Layout;
   highlighted?: string;
   onHighlightError?: (value: string) => void;
+  numberOfXAxisTicks?: number;
 }
 
 interface Measurements {
@@ -151,6 +152,7 @@ const Root = (props: Props) => {
     data, formatValue,
     axisLabel, onRowHover, layout, highlighted,
     onHighlightError,
+    numberOfXAxisTicks,
   } = props;
 
   if (!data.length) {
@@ -209,7 +211,7 @@ const Root = (props: Props) => {
   const totalTopValues = 20;
   const rowHeight = gridHeight ? ((1 / totalTopValues) * gridHeight) : 0;
 
-  const axisIncrement = 20;
+  const axisIncrement = numberOfXAxisTicks ? maxValue / numberOfXAxisTicks : 25;
 
   const totalAxisValues = maxValue / axisIncrement;
 

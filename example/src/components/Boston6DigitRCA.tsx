@@ -8,13 +8,38 @@ import {rgba} from 'polished';
 import {RapidTooltipRoot, getStandardTooltip} from './rapidTooltip';
 import RCA_DATA from '../data/boston-6-digit-rca.json';
 import NAICS_DATA from '../data/naics_2017.json';
-import {scaleSymlog} from 'd3-scale';
+import {scaleLog} from 'd3-scale';
 
+// 8 = 3
+// 16 = 4
+// 32 = 5
+// 64 = 3
+// 128 = 7
+// 256 = 4
+// 512 = 3
+// 1024 = 5
+
+function pow2ceil(v: number) {
+  let p = 2;
+  // eslint-disable-next-line
+  while (v >>= 1) {
+    p <<= 1;
+  }
+  return p;
+}
+// function nearestPowerOf2(n: number) {
+//    return 1 << 31 - Math.clz32(n);
+// }
 const filteredRCA = RCA_DATA.data.cityIndustryYearList.filter(d => d.rcaNumCompany && d.rcaNumCompany >= 1);
 const max = Math.ceil((Math.max(...filteredRCA.map(d => d.rcaNumCompany)) * 1.1) / 10) * 10;
-const scale = scaleSymlog()
-  .domain([1, max])
+const logMax = pow2ceil(250);
+console.log(logMax, max)
+const scale = scaleLog()
+  .domain([1, logMax])
   .range([ 0, 100 ])
+  .base(2)
+
+const numberOfXAxisTicks = 4;
 
 const data: BarDatum[] = filteredRCA.map(d => {
   const industry = NAICS_DATA.find(n => n.naics_id.toString() === d.naicsId);
@@ -38,7 +63,9 @@ const Root = styled.div`
 `;
 
 const formatValue = (value: number) => {
-  return parseFloat(scale.invert(value).toFixed(2));
+  const scaledValue = parseFloat(scale.invert(value).toFixed(2));
+  return scaledValue;
+  // return nearestPowerOf2(scaledValue);
 }
 
 const BostonNewYork6Digit = () => {
@@ -73,6 +100,7 @@ const BostonNewYork6Digit = () => {
         formatValue={formatValue}
         axisLabel={'Specialization'}
         onRowHover={e => setHovered(e)}
+        numberOfXAxisTicks={numberOfXAxisTicks}
       />
       <RapidTooltipRoot ref={tooltipRef} />
     </Root>

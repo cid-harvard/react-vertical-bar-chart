@@ -50,6 +50,7 @@ The VerticalBarChart component takes the following props:
 - **layout** *(optional)*: `Layout`
 - **highlighted** *(optional)*: `string`
 - **onHighlightError** *(optional)*: `(value: string) => void`
+- **numberOfXAxisTicks** *(optional)*: `number`
 
 <a name="bardatum"/>
 
