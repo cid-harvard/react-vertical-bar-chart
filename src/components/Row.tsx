@@ -10,11 +10,20 @@ import {
 
 export const highlightedIdName = 'react-comparison-bar-chart-highlighted-item';
 
-const Root = styled.div`
+const GreaterThan1Root = styled.div`
   display: flex;
 
   &:hover {
     background-color: #f1f1f1;
+  }
+`;
+
+const LessThan1Root = styled.div`
+  display: flex;
+  background-color: #f1f1f1;
+
+  &:hover {
+    background-color: #fff;
   }
 `;
 
@@ -26,6 +35,7 @@ const LabelText = styled.div<WithDyanmicFont>`
   text-overflow: ellipsis;
   opacity: 0;
   animation: ${fadeIn} 0.15s linear 1 forwards 0.3s;
+  background-color: #fff;
 `;
 
 export const Cell = styled.div`
@@ -33,6 +43,10 @@ export const Cell = styled.div`
   overflow: hidden;
   display: flex;
   align-items: center;
+`;
+
+const TextCell = styled(Cell)`
+  background-color: #fff;
 `;
 
 const BarCell = styled(Cell)`
@@ -63,6 +77,7 @@ interface Props {
   chartWidth: number;
   textWidth: number;
   range: number;
+  lessThan1: boolean;
 }
 
 const Row = (props: Props) => {
@@ -70,7 +85,10 @@ const Row = (props: Props) => {
     d, rowHeight, gridHeight,
     max, onRowHover, range,
     layout, highlighted, chartWidth, textWidth,
+    lessThan1,
   } = props;
+
+  const Root = lessThan1 ? LessThan1Root : GreaterThan1Root;
 
   
   const style: React.CSSProperties = {
@@ -121,12 +139,12 @@ const Row = (props: Props) => {
             />
           </Range>
         </BarCell>
-        <Cell
+        <TextCell
           style={{...style, width: '2rem'}}
           onMouseMove={onMouseMove}
           onMouseLeave={onMouseLeave}
         />
-        <Cell
+        <TextCell
           style={{...style, width: textWidth}}
           onMouseMove={onMouseMove}
           onMouseLeave={onMouseLeave}
@@ -140,13 +158,13 @@ const Row = (props: Props) => {
           >
             {d.title}
           </LabelText>
-        </Cell>
+        </TextCell>
       </Root>
     );
   } else {
     return (
       <Root>
-        <Cell
+        <TextCell
           style={{...style, width: textWidth}}
           onMouseMove={onMouseMove}
           onMouseLeave={onMouseLeave}
@@ -160,8 +178,8 @@ const Row = (props: Props) => {
           >
             {d.title}
           </LabelText>
-        </Cell>
-        <Cell
+        </TextCell>
+        <TextCell
           style={{...style, width: '2rem'}}
           onMouseMove={onMouseMove}
           onMouseLeave={onMouseLeave}

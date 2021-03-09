@@ -44,10 +44,21 @@ const TitleRoot = styled.div<WithDyanmicFont>`
   font-size: ${({$dynamicFont}) => $dynamicFont};
 `;
 
+const ChartOverlayContainer = styled.div`
+  pointer-events: none;
+  margin-left: auto;
+  display: flex;
+  position: absolute;
+  top: 1px;
+`;
+
 const AxisLines = styled.div`
   position: absolute;
   width: 100%;
   display: flex;
+
+  /* makes this element the relative parent for position: fixed children */
+  will-change: transform;
 `;
 
 const Grid = styled.div`
@@ -130,6 +141,78 @@ const AxisTitle = styled.div<WithDyanmicFont>`
   transform: translate(-1rem, 0);
 `;
 
+const CenterLine = styled.div`
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  height: 100%;
+  border-left: dashed 2px #333;
+`;
+
+const CenterLineLabel = styled.div<WithDyanmicFont>`
+  font-size: ${({$dynamicFont}) => $dynamicFont};
+  white-space: nowrap;
+  padding-left: 0.7rem;
+  text-shadow:
+       1px 1px 0 #fff,
+     -1px -1px 0 #fff,  
+      1px -1px 0 #fff,
+      -1px 1px 0 #fff,
+       1px 1px 0 #fff;
+`;
+
+const BufferRow = styled.div`
+  z-index: 100;
+  display: flex;
+  align-items: flex-end;
+`;
+
+const Midline = styled.div`
+  border-top: dashed 2px #333;
+  width: 100%;
+  position: absolute;
+  background-color: #f1f1f1;
+  z-index: -1;
+  transform: translateY(1px);
+`;
+
+const MidlineOverText = styled.div<WithDyanmicFont>`
+  font-size: ${({$dynamicFont}) => $dynamicFont};
+  position: absolute;
+  right: 1rem;
+  top: -0.25rem;
+  transform: translateY(-100%);
+`;
+const MidlineUnderText = styled.div<WithDyanmicFont>`
+  font-size: ${({$dynamicFont}) => $dynamicFont};
+  position: absolute;
+  right: 1rem;
+  bottom: 0;
+`;
+
+const ScrollDownText = styled.div<WithDyanmicFont>`
+  font-size: ${({$dynamicFont}) => $dynamicFont};
+  position: absolute;
+  right: 0.25rem;
+  top: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  max-width: 180px;
+  pointer-events: none;
+  text-shadow:
+     1px 1px 0 #fff,
+   -1px -1px 0 #fff,  
+    1px -1px 0 #fff,
+    -1px 1px 0 #fff,
+     1px 1px 0 #fff;
+`;
+const ScrollDownArrow = styled.div`
+  margin-right: 0.75rem;
+  font-size: 1rem;
+`;
+
 export interface Props {
   data: BarDatum[];
   formatValue?: (value: number) => string | number;
@@ -139,6 +222,11 @@ export interface Props {
   highlighted?: string;
   onHighlightError?: (value: string) => void;
   numberOfXAxisTicks?: number;
+  centerLineValue: number;
+  centerLineLabel: string;
+  overMideLineLabel: string;
+  underMideLineLabel: string;
+  scrollDownText: string;
 }
 
 interface Measurements {
@@ -153,6 +241,11 @@ const Root = (props: Props) => {
     axisLabel, onRowHover, layout, highlighted,
     onHighlightError,
     numberOfXAxisTicks,
+    centerLineValue,
+    centerLineLabel,
+    overMideLineLabel,
+    underMideLineLabel,
+    scrollDownText,
   } = props;
 
   if (!data.length) {
@@ -246,8 +339,9 @@ const Root = (props: Props) => {
     }
   }
 
-  const rows = orderedData.map((d) => {
-    return (
+  const rows: React.ReactElement<any>[] = [];
+  orderedData.forEach((d, i) => {
+    rows.push(
       <Row
         key={d.id}
         d={d}
@@ -260,8 +354,41 @@ const Root = (props: Props) => {
         highlighted={highlighted}
         textWidth={textWidth}
         chartWidth={chartWidth}
+        lessThan1={d.value < centerLineValue}
       />
     );
+    if (d.value >= centerLineValue && orderedData[i + 1].value < centerLineValue) {
+      rows.push(
+        <BufferRow style={{height: rowHeight, visibility: chartWidth ? undefined : 'hidden'}}>
+          <Midline style={{height: rowHeight / 2}}>
+            <Cell
+              style={{
+                height: rowHeight,
+                width: `calc(${textWidth}px + 2rem)`,
+                backgroundColor: '#fff',
+              }}
+            />
+            <MidlineOverText
+              $dynamicFont={`clamp(0.75rem, ${chartWidth * 0.025}px, 1rem)`}
+            >
+              {overMideLineLabel} ↑
+            </MidlineOverText>
+            <MidlineUnderText
+              $dynamicFont={`clamp(0.75rem, ${chartWidth * 0.025}px, 1rem)`}
+            >
+              {underMideLineLabel} ↓
+            </MidlineUnderText>
+          </Midline>
+          <Cell
+            style={{
+              height: rowHeight,
+              width: `calc(${textWidth}px + 2rem)`,
+              borderRight: 'solid 1px #333',
+            }}
+          />
+        </BufferRow>
+      );
+    }
   })
 
   if (layout === Layout.Right) {
@@ -303,7 +430,6 @@ const Root = (props: Props) => {
         $dynamicFont={`clamp(0.65rem, ${chartWidth * 0.023}px, 0.87rem)`}
       >
         <AxisLines style={{height: gridHeight}}>
-          {axisTitle}
           {axisLines}
         </AxisLines>
       </TitleRoot>
@@ -326,10 +452,41 @@ const Root = (props: Props) => {
             ref={layout !== Layout.Right ? chartRef : textRef}
           />
           <ChartBlock>
+            <BufferRow style={{height: rowHeight, position: 'sticky', top: '0', background: '#fff'}} />
             {rows}
           </ChartBlock>
+          <ScrollDownText
+            style={{visibility: chartWidth ? undefined : 'hidden',}}
+            $dynamicFont={`clamp(0.65rem, ${chartWidth * 0.023}px, 0.87rem)`}
+          >
+            <ScrollDownArrow>↓</ScrollDownArrow>
+            {scrollDownText}
+          </ScrollDownText>
         </Grid>
       </ChartContainer>
+
+      <ChartOverlayContainer
+        style={{
+          width: chartWidth,
+          visibility: chartWidth ? undefined : 'hidden',
+          marginLeft: layout !== Layout.Right ? undefined : 0,
+          right: layout !== Layout.Right ? 0 : undefined,
+          left: layout !== Layout.Right ? undefined : 0,
+          ...buffer,
+        }}
+      >
+        <AxisLines style={{height: gridHeight, width: chartWidth}}>
+          {axisTitle}
+          <CenterLine style={{left: centerLineValue + '%'}}>
+            <CenterLineLabel
+              $dynamicFont={`clamp(0.75rem, ${chartWidth * 0.025}px, 1.1rem)`}
+              className={'react-comparison-bar-chart-axis-title'}
+            >
+              {centerLineLabel}
+            </CenterLineLabel>
+          </CenterLine>
+        </AxisLines>
+      </ChartOverlayContainer>
     </Container>
   );
 }

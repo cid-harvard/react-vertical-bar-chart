@@ -10,36 +10,22 @@ import RCA_DATA from '../data/boston-6-digit-rca.json';
 import NAICS_DATA from '../data/naics_2017.json';
 import {scaleLog} from 'd3-scale';
 
-// 8 = 3
-// 16 = 4
-// 32 = 5
-// 64 = 3
-// 128 = 7
-// 256 = 4
-// 512 = 3
-// 1024 = 5
-
-function pow2ceil(v: number) {
-  let p = 2;
-  // eslint-disable-next-line
-  while (v >>= 1) {
-    p <<= 1;
-  }
-  return p;
+const tickMarksForMinMax = (min: number, max: number) => {
+  const digits = min.toString().length + max.toString().length;
+  return digits - 3;
 }
-// function nearestPowerOf2(n: number) {
-//    return 1 << 31 - Math.clz32(n);
-// }
-const filteredRCA = RCA_DATA.data.cityIndustryYearList.filter(d => d.rcaNumCompany && d.rcaNumCompany >= 1);
-const max = Math.ceil((Math.max(...filteredRCA.map(d => d.rcaNumCompany)) * 1.1) / 10) * 10;
-const logMax = pow2ceil(250);
-console.log(logMax, max)
-const scale = scaleLog()
-  .domain([1, logMax])
-  .range([ 0, 100 ])
-  .base(2)
 
-const numberOfXAxisTicks = 4;
+const filteredRCA = RCA_DATA.data.cityIndustryYearList.filter(d => d.rcaNumCompany && d.rcaNumCompany > 0);
+const max = Math.ceil((Math.max(...filteredRCA.map(d => d.rcaNumCompany as number)) * 1.1) / 10) * 10;
+const min = Math.min(...filteredRCA.map(d => d.rcaNumCompany as number));
+const scale = scaleLog()
+  .domain([min, max])
+  .range([ 0, 100 ])
+  .nice();
+const numberOfXAxisTicks = tickMarksForMinMax(
+  parseFloat(scale.invert(0).toFixed(5)),
+  parseFloat(scale.invert(100).toFixed(5))
+);
 
 const data: BarDatum[] = filteredRCA.map(d => {
   const industry = NAICS_DATA.find(n => n.naics_id.toString() === d.naicsId);
@@ -63,7 +49,8 @@ const Root = styled.div`
 `;
 
 const formatValue = (value: number) => {
-  const scaledValue = parseFloat(scale.invert(value).toFixed(2));
+  const scaledValue = parseFloat(scale.invert(value).toFixed(4));
+  // const scaledValue = parseFloat(scale.invert(value).toFixed(2));
   return scaledValue;
   // return nearestPowerOf2(scaledValue);
 }
@@ -101,6 +88,11 @@ const BostonNewYork6Digit = () => {
         axisLabel={'Specialization'}
         onRowHover={e => setHovered(e)}
         numberOfXAxisTicks={numberOfXAxisTicks}
+        centerLineValue={scale(1) as number}
+        centerLineLabel={'Expected Specialization'}
+        overMideLineLabel={'Over Specialized'}
+        underMideLineLabel={'Under Specialized'}
+        scrollDownText={'Scroll down to see under specialization'}
       />
       <RapidTooltipRoot ref={tooltipRef} />
     </Root>
