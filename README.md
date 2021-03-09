@@ -51,6 +51,11 @@ The VerticalBarChart component takes the following props:
 - **highlighted** *(optional)*: `string`
 - **onHighlightError** *(optional)*: `(value: string) => void`
 - **numberOfXAxisTicks** *(optional)*: `number`
+- **centerLineValue**: `number`
+- **centerLineLabel**: `string`
+- **overMideLineLabel**: `string`
+- **underMideLineLabel**: `string`
+- **scrollDownText**: `string`
 
 <a name="bardatum"/>
 
