@@ -413,6 +413,16 @@ const Root = (props: Props) => {
   const buffer: React.CSSProperties = layout !== Layout.Right
     ? {paddingRight: overflowPadding + 'rem'} : {paddingLeft: overflowPadding + 'rem'};
 
+  const scrollDown = rows.length > 39 ? (
+    <ScrollDownText
+      style={{visibility: chartWidth ? undefined : 'hidden',}}
+      $dynamicFont={`clamp(0.65rem, ${chartWidth * 0.023}px, 0.87rem)`}
+    >
+      <ScrollDownArrow>↓</ScrollDownArrow>
+      {scrollDownText}
+    </ScrollDownText>
+  ) : null;
+
   return (
     <Container
       style={{...buffer}}
@@ -455,13 +465,7 @@ const Root = (props: Props) => {
             <BufferRow style={{height: rowHeight, position: 'sticky', top: '0', background: '#fff'}} />
             {rows}
           </ChartBlock>
-          <ScrollDownText
-            style={{visibility: chartWidth ? undefined : 'hidden',}}
-            $dynamicFont={`clamp(0.65rem, ${chartWidth * 0.023}px, 0.87rem)`}
-          >
-            <ScrollDownArrow>↓</ScrollDownArrow>
-            {scrollDownText}
-          </ScrollDownText>
+          {scrollDown}
         </Grid>
       </ChartContainer>
 
