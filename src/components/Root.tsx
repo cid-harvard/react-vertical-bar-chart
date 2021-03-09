@@ -359,7 +359,10 @@ const Root = (props: Props) => {
     );
     if (d.value >= centerLineValue && orderedData[i + 1].value < centerLineValue) {
       rows.push(
-        <BufferRow style={{height: rowHeight, visibility: chartWidth ? undefined : 'hidden'}}>
+        <BufferRow
+          key={'vertical-bar-chart-midline'}
+          style={{height: rowHeight, visibility: chartWidth ? undefined : 'hidden'}}
+        >
           <Midline style={{height: rowHeight / 2}}>
             <Cell
               style={{
