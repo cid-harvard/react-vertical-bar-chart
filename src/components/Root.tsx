@@ -357,7 +357,7 @@ const Root = (props: Props) => {
         lessThan1={d.value < centerLineValue}
       />
     );
-    if (d.value >= centerLineValue && orderedData[i + 1].value < centerLineValue) {
+    if (d && d.value >= centerLineValue && orderedData[i + 1] && orderedData[i + 1].value < centerLineValue) {
       rows.push(
         <BufferRow
           key={'vertical-bar-chart-midline'}

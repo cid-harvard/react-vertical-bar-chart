@@ -16,8 +16,14 @@ const tickMarksForMinMax = (min: number, max: number) => {
 }
 
 const filteredRCA = RCA_DATA.data.cityIndustryYearList.filter(d => d.rcaNumCompany && d.rcaNumCompany > 0);
-const max = Math.ceil((Math.max(...filteredRCA.map(d => d.rcaNumCompany as number)) * 1.1) / 10) * 10;
-const min = Math.min(...filteredRCA.map(d => d.rcaNumCompany as number));
+let max = Math.ceil((Math.max(...filteredRCA.map(d => d.rcaNumCompany as number)) * 1.1) / 10) * 10;
+let min = Math.min(...filteredRCA.map(d => d.rcaNumCompany as number));
+if (max < 10) {
+  max = 10;
+}
+if (min >= 1) {
+  min = 0.1;
+}
 const scale = scaleLog()
   .domain([min, max])
   .range([ 0, 100 ])
