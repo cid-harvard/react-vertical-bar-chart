@@ -357,7 +357,7 @@ const Root = (props: Props) => {
         lessThan1={d.value < centerLineValue}
       />
     );
-    if (d && d.value >= centerLineValue && orderedData[i + 1] && orderedData[i + 1].value < centerLineValue) {
+    if (d && d.value >= centerLineValue && (!orderedData[i + 1] || orderedData[i + 1].value < centerLineValue)) {
       rows.push(
         <BufferRow
           key={'vertical-bar-chart-midline'}
@@ -391,8 +391,71 @@ const Root = (props: Props) => {
           />
         </BufferRow>
       );
+    } else if (d && d.value < centerLineValue && i === 0) {
+      rows.unshift(
+        <BufferRow
+          key={'vertical-bar-chart-midline'}
+          style={{height: rowHeight, visibility: chartWidth ? undefined : 'hidden'}}
+        >
+          <Midline style={{height: rowHeight / 2}}>
+            <Cell
+              style={{
+                height: rowHeight,
+                width: `calc(${textWidth}px + 2rem)`,
+                backgroundColor: '#fff',
+              }}
+            />
+            <MidlineOverText
+              $dynamicFont={`clamp(0.75rem, ${chartWidth * 0.025}px, 1rem)`}
+            >
+              {overMideLineLabel} ↑
+            </MidlineOverText>
+            <MidlineUnderText
+              $dynamicFont={`clamp(0.75rem, ${chartWidth * 0.025}px, 1rem)`}
+            >
+              {underMideLineLabel} ↓
+            </MidlineUnderText>
+          </Midline>
+          <Cell
+            style={{
+              height: rowHeight,
+              width: `calc(${textWidth}px + 2rem)`,
+              borderRight: 'solid 1px #333',
+            }}
+          />
+        </BufferRow>
+      );
+
     }
   })
+
+  const remainingSpace = totalTopValues - rows.length;
+  if (remainingSpace > 0) {
+    for (let i = 0; i < remainingSpace - 1; i++) {
+      const d = {
+        id: 'empty-row-buffer-' + i,
+        title: '',
+        value: 0,
+        color: 'transparent',
+      }
+      rows.push(
+        <Row
+          key={d.id}
+          d={d}
+          rowHeight={rowHeight}
+          gridHeight={gridHeight}
+          max={maxValue}
+          onRowHover={undefined}
+          range={maxValue}
+          layout={layout}
+          highlighted={undefined}
+          textWidth={textWidth}
+          chartWidth={chartWidth}
+          lessThan1={true}
+        />
+      );
+    }
+  }
 
   if (layout === Layout.Right) {
     rows.reverse();
