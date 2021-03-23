@@ -151,9 +151,6 @@ const Row = (props: Props) => {
         >
           <LabelText
             className={'react-comparison-bar-chart-row-label'}
-            style={{
-              textAlign: 'left',
-            }}
             $dynamicFont={`clamp(0.5rem, ${gridHeight * 0.04}px, 0.9rem)`}
           >
             {d.title}
@@ -172,7 +169,7 @@ const Row = (props: Props) => {
           <LabelText
             className={'react-comparison-bar-chart-row-label'}
             style={{
-              textAlign: 'right',
+              textAlign: 'left',
             }}
             $dynamicFont={`clamp(0.5rem, ${gridHeight * 0.04}px, 0.9rem)`}
           >

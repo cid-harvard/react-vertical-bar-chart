@@ -183,6 +183,7 @@ const MidlineOverText = styled.div<WithDyanmicFont>`
   right: 1rem;
   top: -0.25rem;
   transform: translateY(-100%);
+  z-index: 100;
 `;
 const MidlineUnderText = styled.div<WithDyanmicFont>`
   font-size: ${({$dynamicFont}) => $dynamicFont};
@@ -199,7 +200,7 @@ const ScrollDownText = styled.div<WithDyanmicFont>`
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  max-width: 180px;
+  max-width: 150px;
   pointer-events: none;
   text-shadow:
      1px 1px 0 #fff,
@@ -232,6 +233,7 @@ export interface Props {
 interface Measurements {
   gridHeight: number,
   chartWidth: number,
+  chartHeight: number,
   textWidth: number,
 }
 
@@ -252,8 +254,8 @@ const Root = (props: Props) => {
     return null;
   }
 
-  const [{gridHeight, chartWidth, textWidth}, setMeasurements] = useState<Measurements>({
-    gridHeight: 0, chartWidth: 0, textWidth: 0
+  const [{gridHeight, chartWidth, chartHeight, textWidth}, setMeasurements] = useState<Measurements>({
+    gridHeight: 0, chartWidth: 0, chartHeight: 0, textWidth: 0
   });
   const rootRef = useRef<HTMLDivElement | null>(null);
   const textRef = useRef<HTMLDivElement | null>(null);
@@ -264,7 +266,10 @@ const Root = (props: Props) => {
       const chartRect = chartRef.current.getBoundingClientRect();
       const textRect = textRef.current.getBoundingClientRect();
       setMeasurements({
-        gridHeight: rootRef.current.offsetHeight, chartWidth: chartRect.width, textWidth: textRect.width,
+        gridHeight: rootRef.current.offsetHeight,
+        chartWidth: chartRect.width,
+        chartHeight: chartRect.height,
+        textWidth: textRect.width,
       });
     }
   }, [rootRef, chartRef])
@@ -275,7 +280,10 @@ const Root = (props: Props) => {
         const chartRect = chartRef.current.getBoundingClientRect();
         const textRect = textRef.current.getBoundingClientRect();
         setMeasurements({
-          gridHeight: rootRef.current.offsetHeight, chartWidth: chartRect.width, textWidth: textRect.width,
+          gridHeight: rootRef.current.offsetHeight,
+          chartWidth: chartRect.width,
+          chartHeight: chartRect.height,
+          textWidth: textRect.width,
         });
       }
     };
@@ -301,7 +309,7 @@ const Root = (props: Props) => {
 
   const maxValue = 100;
 
-  const totalTopValues = 20;
+  const totalTopValues = gridHeight < 500 ? 10 : 20;
   const rowHeight = gridHeight ? ((1 / totalTopValues) * gridHeight) : 0;
 
   const axisIncrement = numberOfXAxisTicks ? maxValue / numberOfXAxisTicks : 25;
@@ -310,9 +318,9 @@ const Root = (props: Props) => {
 
   let axisFontSize: string;
   if (chartWidth < gridHeight) {
-    axisFontSize = `clamp(0.55rem, ${chartWidth * 0.025}px, 1rem)`;
+    axisFontSize = `clamp(0.55rem, ${chartWidth * 0.025}px, 0.875rem)`;
   } else {
-    axisFontSize = `clamp(0.55rem, ${gridHeight * 0.025}px, 1rem)`;
+    axisFontSize = `clamp(0.55rem, ${gridHeight * 0.025}px, 0.875rem)`;
   }
   const axisWidth = chartWidth / totalAxisValues;
 
@@ -357,6 +365,7 @@ const Root = (props: Props) => {
         lessThan1={d.value < centerLineValue}
       />
     );
+    const midlineFontSize = `clamp(0.75rem, ${chartHeight * 0.025}px, 0.875rem)`;
     if (d && d.value >= centerLineValue && (!orderedData[i + 1] || orderedData[i + 1].value < centerLineValue)) {
       rows.push(
         <BufferRow
@@ -372,12 +381,12 @@ const Root = (props: Props) => {
               }}
             />
             <MidlineOverText
-              $dynamicFont={`clamp(0.75rem, ${chartWidth * 0.025}px, 1rem)`}
+              $dynamicFont={midlineFontSize}
             >
               {overMideLineLabel} ↑
             </MidlineOverText>
             <MidlineUnderText
-              $dynamicFont={`clamp(0.75rem, ${chartWidth * 0.025}px, 1rem)`}
+              $dynamicFont={midlineFontSize}
             >
               {underMideLineLabel} ↓
             </MidlineUnderText>
@@ -406,12 +415,12 @@ const Root = (props: Props) => {
               }}
             />
             <MidlineOverText
-              $dynamicFont={`clamp(0.75rem, ${chartWidth * 0.025}px, 1rem)`}
+              $dynamicFont={midlineFontSize}
             >
               {overMideLineLabel} ↑
             </MidlineOverText>
             <MidlineUnderText
-              $dynamicFont={`clamp(0.75rem, ${chartWidth * 0.025}px, 1rem)`}
+              $dynamicFont={midlineFontSize}
             >
               {underMideLineLabel} ↓
             </MidlineUnderText>
@@ -469,7 +478,7 @@ const Root = (props: Props) => {
         textAlign: layout !== Layout.Right ? 'right' : undefined,
       }}
       className={'react-comparison-bar-chart-axis-title'}
-      $dynamicFont={`clamp(0.75rem, ${chartWidth * 0.025}px, 1.1rem)`}
+      $dynamicFont={`clamp(0.75rem, ${chartWidth * 0.025}px, 0.875rem)`}
     >
       {axisLabel}
     </AxisTitle>
@@ -482,7 +491,7 @@ const Root = (props: Props) => {
   const scrollDown = rows.length > 39 ? (
     <ScrollDownText
       style={{visibility: chartWidth ? undefined : 'hidden',}}
-      $dynamicFont={`clamp(0.65rem, ${chartWidth * 0.023}px, 0.87rem)`}
+      $dynamicFont={`clamp(0.65rem, ${chartWidth * 0.02}px, 0.75rem)`}
     >
       <ScrollDownArrow>↓</ScrollDownArrow>
       {scrollDownText}
@@ -503,7 +512,7 @@ const Root = (props: Props) => {
           left: layout !== Layout.Right ? undefined : 0,
           ...buffer,
         }}
-        $dynamicFont={`clamp(0.65rem, ${chartWidth * 0.023}px, 0.87rem)`}
+        $dynamicFont={`clamp(0.65rem, ${chartWidth * 0.02}px, 0.875rem)`}
       >
         <AxisLines style={{height: gridHeight}}>
           {axisLines}
@@ -549,7 +558,7 @@ const Root = (props: Props) => {
           {axisTitle}
           <CenterLine style={{left: centerLineValue + '%'}}>
             <CenterLineLabel
-              $dynamicFont={`clamp(0.75rem, ${chartWidth * 0.025}px, 1.1rem)`}
+              $dynamicFont={`clamp(0.5rem, ${chartWidth * 0.023}px, 0.875rem)`}
               className={'react-comparison-bar-chart-axis-title'}
             >
               {centerLineLabel}
