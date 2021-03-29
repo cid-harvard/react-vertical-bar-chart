@@ -63,6 +63,7 @@ const formatValue = (value: number) => {
 
 const BostonNewYork6Digit = () => {
   const tooltipRef = useRef<HTMLDivElement | null>(null);
+  const [highlighted, setHighlighted] = React.useState<string | undefined>(undefined);
 
   const setHovered = (e: RowHoverEvent | undefined) => {
     const node = tooltipRef.current;
@@ -87,21 +88,25 @@ const BostonNewYork6Digit = () => {
   };
 
   return (
-    <Root>
-      <ComparisonBarChart
-        data={data}
-        formatValue={formatValue}
-        axisLabel={'Specialization'}
-        onRowHover={e => setHovered(e)}
-        numberOfXAxisTicks={numberOfXAxisTicks}
-        centerLineValue={scale(1) as number}
-        centerLineLabel={'Expected Specialization'}
-        overMideLineLabel={'Over Specialized'}
-        underMideLineLabel={'Under Specialized'}
-        scrollDownText={'Scroll down to see under specialization'}
-      />
-      <RapidTooltipRoot ref={tooltipRef} />
-    </Root>
+    <>
+      <button onClick={() => setHighlighted(c => !c ? '2022' : undefined)}>highlight</button>
+      <Root>
+        <ComparisonBarChart
+          data={data}
+          highlighted={highlighted}
+          formatValue={formatValue}
+          axisLabel={'Specialization'}
+          onRowHover={e => setHovered(e)}
+          numberOfXAxisTicks={numberOfXAxisTicks}
+          centerLineValue={scale(1) as number}
+          centerLineLabel={'Expected Specialization'}
+          overMideLineLabel={'Over Specialized'}
+          underMideLineLabel={'Under Specialized'}
+          scrollDownText={'Scroll down to see under specialization'}
+        />
+        <RapidTooltipRoot ref={tooltipRef} />
+      </Root>
+    </>
   )
 }
 

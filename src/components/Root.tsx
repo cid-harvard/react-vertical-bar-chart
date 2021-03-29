@@ -298,7 +298,7 @@ const Root = (props: Props) => {
       const rootNode = rootRef.current;
       const highlightedElm: HTMLElement | null = rootNode.querySelector(`#${highlightedIdName}`);
       if (highlightedElm) {
-        highlightedElm.scrollIntoView({behavior: "smooth"});
+        highlightedElm.scrollIntoView({behavior: "smooth", block: "center"});
       } else if (onHighlightError) {
         onHighlightError(highlighted);
       }
