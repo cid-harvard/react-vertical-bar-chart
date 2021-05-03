@@ -15,7 +15,7 @@ const tickMarksForMinMax = (min: number, max: number) => {
   return digits - 3;
 }
 
-const filteredRCA = RCA_DATA.data.cityIndustryYearList.filter(d => d.rcaNumCompany && d.rcaNumCompany > 0);
+const filteredRCA = RCA_DATA.data.cityIndustryYearList.filter((d, i) => d.rcaNumCompany && d.rcaNumCompany > 0 && i % 3 === 0 && i % 5 === 0 && i % 2 === 0);
 let max = Math.ceil((Math.max(...filteredRCA.map(d => d.rcaNumCompany as number)) * 1.1) / 10) * 10;
 let min = Math.min(...filteredRCA.map(d => d.rcaNumCompany as number));
 if (max < 10) {
@@ -54,11 +54,33 @@ const Root = styled.div`
   }
 `;
 
+function gcd(a: number, b: number): number {
+  return (b) ? gcd(b, a % b) : a;
+}
+
+const decimalToFraction = function (decimal: number) {
+  let top: number | string    = decimal.toString().replace(/\d+[.]/, '');
+  const bottom: number  = Math.pow(10, top.length);
+  if (decimal > 1) {
+    top  = +top + Math.floor(decimal) * bottom;
+  }
+  const x = gcd(top as number, bottom);
+  return {
+    top    : (top as number / x),
+    bottom  : (bottom / x),
+    display  : (top as number / x) + ':' + (bottom / x)
+  };
+};
+
+
 const formatValue = (value: number) => {
   const scaledValue = parseFloat(scale.invert(value).toFixed(4));
-  // const scaledValue = parseFloat(scale.invert(value).toFixed(2));
-  return scaledValue;
-  // return nearestPowerOf2(scaledValue);
+  if (scaledValue >= 1) {
+    return scaledValue + '×';
+  } else {
+    const {top, bottom} = decimalToFraction(scaledValue);
+    return <><sup>{top}</sup>&frasl;<sub>{bottom}</sub>×</>;
+  }
 }
 
 const BostonNewYork6Digit = () => {

@@ -216,7 +216,7 @@ const ScrollDownArrow = styled.div`
 
 export interface Props {
   data: BarDatum[];
-  formatValue?: (value: number) => string | number;
+  formatValue?: (value: number) => string | number | React.ReactElement;
   axisLabel?: React.ReactElement<any> | string | undefined | null;
   onRowHover?: (event: RowHoverEvent) => void;
   layout?: Layout;
@@ -357,7 +357,6 @@ const Root = (props: Props) => {
         gridHeight={gridHeight}
         max={maxValue}
         onRowHover={onRowHover}
-        range={maxValue}
         layout={layout}
         highlighted={highlighted}
         textWidth={textWidth}
@@ -455,7 +454,6 @@ const Root = (props: Props) => {
           gridHeight={gridHeight}
           max={maxValue}
           onRowHover={undefined}
-          range={maxValue}
           layout={layout}
           highlighted={undefined}
           textWidth={textWidth}

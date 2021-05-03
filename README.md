@@ -44,7 +44,7 @@ export default App
 The VerticalBarChart component takes the following props:
 
 - **data**: `BarDatum[]`
-- **formatValue** *(optional)*: `(value: number) => string | number`
+- **formatValue** *(optional)*: `(value: number) => string | number | React.ReactElement`
 - **axisLabel** *(optional)*: `React.ReactElement<any> | string | undefined | null`
 - **onRowHover** *(optional)*: `(event: RowHoverEvent) => void`
 - **layout** *(optional)*: `Layout`

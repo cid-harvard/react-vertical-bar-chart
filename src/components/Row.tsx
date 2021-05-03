@@ -76,14 +76,13 @@ interface Props {
   highlighted: string | undefined;
   chartWidth: number;
   textWidth: number;
-  range: number;
   lessThan1: boolean;
 }
 
 const Row = (props: Props) => {
   const {
     d, rowHeight, gridHeight,
-    max, onRowHover, range,
+    max, onRowHover,
     layout, highlighted, chartWidth, textWidth,
     lessThan1,
   } = props;
@@ -119,7 +118,10 @@ const Row = (props: Props) => {
     }
   }
 
+  const percent = d.value / max * 100;
+
   if (layout === Layout.Right) {
+
     return (
       <Root>
         <BarCell
@@ -128,12 +130,12 @@ const Row = (props: Props) => {
           onMouseMove={onMouseMove}
           onMouseLeave={onMouseLeave}
         >
-          <Range style={{width: `${range}%`}}>
+          <Range style={{width: `${max}%`}}>
             <Bar
               className={'react-comparison-bar-chart-bar'}
               style={{
                 backgroundColor: d.color,
-                width: `${d.value / max * 100}%`,
+                width: `${percent}%`,
                 transitionDelay: '0.3s',
               }}
             />
@@ -159,6 +161,52 @@ const Row = (props: Props) => {
       </Root>
     );
   } else {
+    let bar: React.ReactElement<any> | null;
+    if (percent > 50) {
+      bar = (
+        <React.Fragment>
+          <Bar
+            className={'react-comparison-bar-chart-bar'}
+            style={{
+              backgroundColor: 'transparent',
+              width: `50%`,
+              transition: 'none',
+            }}
+          />
+          <Bar
+            className={'react-comparison-bar-chart-bar'}
+            style={{
+              backgroundColor: d.color,
+              width: `${percent - 50}%`,
+              transitionDelay: '0.3s',
+            }}
+          />
+        </React.Fragment>
+      );
+    } else if (percent < 50) {
+      bar = (
+        <React.Fragment>
+          <Bar
+            className={'react-comparison-bar-chart-bar'}
+            style={{
+              backgroundColor: 'transparent',
+              width: `${percent}%`,
+              transition: 'none',
+            }}
+          />
+          <Bar
+            className={'react-comparison-bar-chart-bar'}
+            style={{
+              backgroundColor: d.color,
+              width: `${50 - percent}%`,
+              transitionDelay: '0.3s',
+            }}
+          />
+        </React.Fragment>
+      );
+    } else {
+      bar = null;
+    }
     return (
       <Root>
         <TextCell
@@ -187,15 +235,8 @@ const Row = (props: Props) => {
           onMouseMove={onMouseMove}
           onMouseLeave={onMouseLeave}
         >
-          <Range style={{width: `${range}%`}}>
-            <Bar
-              className={'react-comparison-bar-chart-bar'}
-              style={{
-                backgroundColor: d.color,
-                width: `${d.value / max * 100}%`,
-                transitionDelay: '0.3s',
-              }}
-            />
+          <Range style={{width: `${max}%`}}>
+            {bar}
           </Range>
         </BarCell>
       </Root>
