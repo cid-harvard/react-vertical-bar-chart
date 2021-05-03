@@ -76,6 +76,7 @@ interface Props {
   highlighted: string | undefined;
   chartWidth: number;
   textWidth: number;
+  centerLineValue: number;
   lessThan1: boolean;
 }
 
@@ -85,6 +86,7 @@ const Row = (props: Props) => {
     max, onRowHover,
     layout, highlighted, chartWidth, textWidth,
     lessThan1,
+    centerLineValue,
   } = props;
 
   const Root = lessThan1 ? LessThan1Root : GreaterThan1Root;
@@ -162,14 +164,14 @@ const Row = (props: Props) => {
     );
   } else {
     let bar: React.ReactElement<any> | null;
-    if (percent > 50) {
+    if (percent > centerLineValue) {
       bar = (
         <React.Fragment>
           <Bar
             className={'react-comparison-bar-chart-bar'}
             style={{
               backgroundColor: 'transparent',
-              width: `50%`,
+              width: `${centerLineValue}%`,
               transition: 'none',
             }}
           />
@@ -177,13 +179,13 @@ const Row = (props: Props) => {
             className={'react-comparison-bar-chart-bar'}
             style={{
               backgroundColor: d.color,
-              width: `${percent - 50}%`,
+              width: `${percent - centerLineValue}%`,
               transitionDelay: '0.3s',
             }}
           />
         </React.Fragment>
       );
-    } else if (percent < 50) {
+    } else if (percent < centerLineValue) {
       bar = (
         <React.Fragment>
           <Bar
@@ -198,7 +200,7 @@ const Row = (props: Props) => {
             className={'react-comparison-bar-chart-bar'}
             style={{
               backgroundColor: d.color,
-              width: `${50 - percent}%`,
+              width: `${centerLineValue - percent}%`,
               transitionDelay: '0.3s',
             }}
           />

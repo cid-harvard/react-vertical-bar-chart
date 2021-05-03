@@ -24,10 +24,27 @@ if (max < 10) {
 if (min >= 1) {
   min = 0.1;
 }
-const scale = scaleLog()
+
+let scale = scaleLog()
   .domain([min, max])
   .range([ 0, 100 ])
   .nice();
+
+
+min = parseFloat(scale.invert(0).toFixed(5));
+max = parseFloat(scale.invert(100).toFixed(5));
+
+if (max.toString().length > min.toString().length - 1) {
+  min = 1 / max;
+} else if (max.toString().length < min.toString().length - 1) {
+  max = 1 / min;
+}
+
+scale = scaleLog()
+  .domain([min, max])
+  .range([ 0, 100 ])
+  .nice();
+
 const numberOfXAxisTicks = tickMarksForMinMax(
   parseFloat(scale.invert(0).toFixed(5)),
   parseFloat(scale.invert(100).toFixed(5))

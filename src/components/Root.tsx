@@ -361,6 +361,7 @@ const Root = (props: Props) => {
         highlighted={highlighted}
         textWidth={textWidth}
         chartWidth={chartWidth}
+        centerLineValue={centerLineValue}
         lessThan1={d.value < centerLineValue}
       />
     );
@@ -458,6 +459,7 @@ const Root = (props: Props) => {
           highlighted={undefined}
           textWidth={textWidth}
           chartWidth={chartWidth}
+          centerLineValue={centerLineValue}
           lessThan1={true}
         />
       );
