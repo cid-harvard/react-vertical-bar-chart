@@ -94,7 +94,9 @@ const Row = (props: Props) => {
   
   const style: React.CSSProperties = {
     height: rowHeight,
-    backgroundColor: highlighted === d.id ? '#f1f1f1' : undefined,
+    backgroundColor: highlighted === d.id
+      ? lessThan1 ? '#fff' : '#f1f1f1'
+      : undefined,
   };
   const onMouseMove = (e: React.MouseEvent) => {
     if (onRowHover) {

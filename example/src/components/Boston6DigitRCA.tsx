@@ -15,7 +15,7 @@ const tickMarksForMinMax = (min: number, max: number) => {
   return digits - 3;
 }
 
-const filteredRCA = RCA_DATA.data.cityIndustryYearList.filter((d, i) => d.rcaNumCompany && d.rcaNumCompany > 0 && i % 3 === 0 && i % 5 === 0 && i % 2 === 0);
+const filteredRCA = RCA_DATA.data.cityIndustryYearList.filter((d) => d.rcaNumCompany && d.rcaNumCompany > 0);
 let max = Math.ceil((Math.max(...filteredRCA.map(d => d.rcaNumCompany as number)) * 1.1) / 10) * 10;
 let min = Math.min(...filteredRCA.map(d => d.rcaNumCompany as number));
 if (max < 10) {
@@ -128,7 +128,7 @@ const BostonNewYork6Digit = () => {
 
   return (
     <>
-      <button onClick={() => setHighlighted(c => !c ? '2022' : undefined)}>highlight</button>
+      <button onClick={() => setHighlighted(c => !c ? '2003' : undefined)}>highlight</button>
       <Root>
         <ComparisonBarChart
           data={data}
