@@ -147,11 +147,6 @@ const AxisTitle = styled.div`
   }
 `;
 
-const AxisTitleBackground = styled.span`
-  background-color: rgba(255, 255, 255, 0.7);
-  padding: 0.15rem;
-`;
-
 const CenterLine = styled.div`
   position: fixed;
   top: 0;
@@ -483,7 +478,7 @@ const Root = (props: Props) => {
       }}
       className={'react-comparison-bar-chart-axis-title'}
     >
-      <AxisTitleBackground>{axisLabel}</AxisTitleBackground>
+      {axisLabel}
     </AxisTitle>
   ) : null;
 
