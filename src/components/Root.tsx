@@ -129,15 +129,27 @@ const AxisLine = styled.div`
   border-left: solid 1px #dfdfdf;
 `;
 
-const AxisTitle = styled.div<WithDyanmicFont>`
+const AxisTitle = styled.div`
   position: absolute;
   bottom: 0;
   z-index: 1;
-  font-size: ${({$dynamicFont}) => $dynamicFont};
   padding: 0 0 0.3rem 1rem;
   box-sizing: border-box;
   pointer-events: none;
   transform: translate(-1rem, 0);
+  font-weight: 600;
+  font-size: 0.75rem;
+  color: #333;
+  text-transform: uppercase;
+
+  @media (max-height: 600px) {
+    font-size: 0.65rem;
+  }
+`;
+
+const AxisTitleBackground = styled.span`
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 0.15rem;
 `;
 
 const CenterLine = styled.div`
@@ -470,9 +482,8 @@ const Root = (props: Props) => {
         textAlign: 'right',
       }}
       className={'react-comparison-bar-chart-axis-title'}
-      $dynamicFont={`clamp(0.75rem, ${chartWidth * 0.025}px, 0.875rem)`}
     >
-      {axisLabel}
+      <AxisTitleBackground>{axisLabel}</AxisTitleBackground>
     </AxisTitle>
   ) : null;
 
