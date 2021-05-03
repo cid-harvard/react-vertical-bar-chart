@@ -4,7 +4,6 @@ import {
   WithDyanmicFont,
   BarDatum,
   RowHoverEvent,
-  Layout,
   fadeIn,
 } from './Utils';
 
@@ -72,7 +71,6 @@ interface Props {
   gridHeight: number;
   max: number;
   onRowHover: undefined | ((event: RowHoverEvent) => void);
-  layout: Layout | undefined;
   highlighted: string | undefined;
   chartWidth: number;
   textWidth: number;
@@ -84,7 +82,7 @@ const Row = (props: Props) => {
   const {
     d, rowHeight, gridHeight,
     max, onRowHover,
-    layout, highlighted, chartWidth, textWidth,
+    highlighted, chartWidth, textWidth,
     lessThan1,
     centerLineValue,
   } = props;
@@ -123,129 +121,86 @@ const Row = (props: Props) => {
   }
 
   const percent = d.value / max * 100;
-
-  if (layout === Layout.Right) {
-
-    return (
-      <Root>
-        <BarCell
-          id={highlighted === d.id ? highlightedIdName : undefined}
-          style={{...style, width: chartWidth}}
-          onMouseMove={onMouseMove}
-          onMouseLeave={onMouseLeave}
-        >
-          <Range style={{width: `${max}%`}}>
-            <Bar
-              className={'react-comparison-bar-chart-bar'}
-              style={{
-                backgroundColor: d.color,
-                width: `${percent}%`,
-                transitionDelay: '0.3s',
-              }}
-            />
-          </Range>
-        </BarCell>
-        <TextCell
-          style={{...style, width: '2rem'}}
-          onMouseMove={onMouseMove}
-          onMouseLeave={onMouseLeave}
+  let bar: React.ReactElement<any> | null;
+  if (percent > centerLineValue) {
+    bar = (
+      <React.Fragment>
+        <Bar
+          className={'react-comparison-bar-chart-bar'}
+          style={{
+            backgroundColor: 'transparent',
+            width: `${centerLineValue}%`,
+            transition: 'none',
+          }}
         />
-        <TextCell
-          style={{...style, width: textWidth}}
-          onMouseMove={onMouseMove}
-          onMouseLeave={onMouseLeave}
-        >
-          <LabelText
-            className={'react-comparison-bar-chart-row-label'}
-            $dynamicFont={`clamp(0.5rem, ${gridHeight * 0.04}px, 0.9rem)`}
-          >
-            {d.title}
-          </LabelText>
-        </TextCell>
-      </Root>
+        <Bar
+          className={'react-comparison-bar-chart-bar'}
+          style={{
+            backgroundColor: d.color,
+            width: `${percent - centerLineValue}%`,
+            transitionDelay: '0.3s',
+          }}
+        />
+      </React.Fragment>
+    );
+  } else if (percent < centerLineValue) {
+    bar = (
+      <React.Fragment>
+        <Bar
+          className={'react-comparison-bar-chart-bar'}
+          style={{
+            backgroundColor: 'transparent',
+            width: `${percent}%`,
+            transition: 'none',
+          }}
+        />
+        <Bar
+          className={'react-comparison-bar-chart-bar'}
+          style={{
+            backgroundColor: d.color,
+            width: `${centerLineValue - percent}%`,
+            transitionDelay: '0.3s',
+          }}
+        />
+      </React.Fragment>
     );
   } else {
-    let bar: React.ReactElement<any> | null;
-    if (percent > centerLineValue) {
-      bar = (
-        <React.Fragment>
-          <Bar
-            className={'react-comparison-bar-chart-bar'}
-            style={{
-              backgroundColor: 'transparent',
-              width: `${centerLineValue}%`,
-              transition: 'none',
-            }}
-          />
-          <Bar
-            className={'react-comparison-bar-chart-bar'}
-            style={{
-              backgroundColor: d.color,
-              width: `${percent - centerLineValue}%`,
-              transitionDelay: '0.3s',
-            }}
-          />
-        </React.Fragment>
-      );
-    } else if (percent < centerLineValue) {
-      bar = (
-        <React.Fragment>
-          <Bar
-            className={'react-comparison-bar-chart-bar'}
-            style={{
-              backgroundColor: 'transparent',
-              width: `${percent}%`,
-              transition: 'none',
-            }}
-          />
-          <Bar
-            className={'react-comparison-bar-chart-bar'}
-            style={{
-              backgroundColor: d.color,
-              width: `${centerLineValue - percent}%`,
-              transitionDelay: '0.3s',
-            }}
-          />
-        </React.Fragment>
-      );
-    } else {
-      bar = null;
-    }
-    return (
-      <Root>
-        <TextCell
-          style={{...style, width: textWidth}}
-          onMouseMove={onMouseMove}
-          onMouseLeave={onMouseLeave}
-        >
-          <LabelText
-            className={'react-comparison-bar-chart-row-label'}
-            style={{
-              textAlign: 'left',
-            }}
-            $dynamicFont={`clamp(0.5rem, ${gridHeight * 0.04}px, 0.9rem)`}
-          >
-            {d.title}
-          </LabelText>
-        </TextCell>
-        <TextCell
-          style={{...style, width: '2rem'}}
-          onMouseMove={onMouseMove}
-          onMouseLeave={onMouseLeave}
-        />
-        <BarCell
-          id={highlighted === d.id ? highlightedIdName : undefined}
-          style={{...style, width: chartWidth}}
-          onMouseMove={onMouseMove}
-          onMouseLeave={onMouseLeave}
-        >
-          <Range style={{width: `${max}%`}}>
-            {bar}
-          </Range>
-        </BarCell>
-      </Root>
-    );
+    bar = null;
   }
+  return (
+    <Root>
+      <TextCell
+        style={{...style, width: textWidth}}
+        onMouseMove={onMouseMove}
+        onMouseLeave={onMouseLeave}
+      >
+        <LabelText
+          className={'react-comparison-bar-chart-row-label'}
+          style={{
+            textAlign: 'left',
+          }}
+          $dynamicFont={`clamp(0.5rem, ${gridHeight * 0.04}px, 0.9rem)`}
+        >
+          {d.title}
+        </LabelText>
+      </TextCell>
+      <TextCell
+        style={{...style, width: '0.75rem'}}
+        onMouseMove={onMouseMove}
+        onMouseLeave={onMouseLeave}
+      />
+      <BarCell
+        id={highlighted === d.id ? highlightedIdName : undefined}
+        style={{...style, width: chartWidth}}
+        onMouseMove={onMouseMove}
+        onMouseLeave={onMouseLeave}
+      >
+        <Range style={{width: `${max}%`}}>
+          {bar}
+        </Range>
+      </BarCell>
+    </Root>
+  );
 
 }
 

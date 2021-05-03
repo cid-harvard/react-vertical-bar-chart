@@ -6,7 +6,6 @@ import {
   WithDyanmicFont,
   BarDatum,
   RowHoverEvent,
-  Layout,
 } from './Utils';
 
 const overflowPadding = 1; // in rem. Needed to allow for final axis value to remain visible
@@ -195,7 +194,7 @@ const MidlineUnderText = styled.div<WithDyanmicFont>`
 const ScrollDownText = styled.div<WithDyanmicFont>`
   font-size: ${({$dynamicFont}) => $dynamicFont};
   position: absolute;
-  right: 0.25rem;
+  right: calc(0.25rem + 12px);
   top: 50%;
   display: flex;
   justify-content: flex-end;
@@ -219,7 +218,6 @@ export interface Props {
   formatValue?: (value: number) => string | number | React.ReactElement;
   axisLabel?: React.ReactElement<any> | string | undefined | null;
   onRowHover?: (event: RowHoverEvent) => void;
-  layout?: Layout;
   highlighted?: string;
   onHighlightError?: (value: string) => void;
   numberOfXAxisTicks?: number;
@@ -240,7 +238,7 @@ interface Measurements {
 const Root = (props: Props) => {
   const {
     data, formatValue,
-    axisLabel, onRowHover, layout, highlighted,
+    axisLabel, onRowHover, highlighted,
     onHighlightError,
     numberOfXAxisTicks,
     centerLineValue,
@@ -318,9 +316,9 @@ const Root = (props: Props) => {
 
   let axisFontSize: string;
   if (chartWidth < gridHeight) {
-    axisFontSize = `clamp(0.55rem, ${chartWidth * 0.025}px, 0.875rem)`;
+    axisFontSize = `clamp(0.55rem, ${chartWidth * 0.025}px, 0.7rem)`;
   } else {
-    axisFontSize = `clamp(0.55rem, ${gridHeight * 0.025}px, 0.875rem)`;
+    axisFontSize = `clamp(0.55rem, ${gridHeight * 0.025}px, 0.7rem)`;
   }
   const axisWidth = chartWidth / totalAxisValues;
 
@@ -357,7 +355,6 @@ const Root = (props: Props) => {
         gridHeight={gridHeight}
         max={maxValue}
         onRowHover={onRowHover}
-        layout={layout}
         highlighted={highlighted}
         textWidth={textWidth}
         chartWidth={chartWidth}
@@ -376,7 +373,7 @@ const Root = (props: Props) => {
             <Cell
               style={{
                 height: rowHeight,
-                width: `calc(${textWidth}px + 2rem)`,
+                width: `calc(${textWidth}px + 0.75rem)`,
                 backgroundColor: '#fff',
               }}
             />
@@ -394,7 +391,7 @@ const Root = (props: Props) => {
           <Cell
             style={{
               height: rowHeight,
-              width: `calc(${textWidth}px + 2rem)`,
+              width: `calc(${textWidth}px + 0.75rem)`,
               borderRight: 'solid 1px #333',
             }}
           />
@@ -410,7 +407,7 @@ const Root = (props: Props) => {
             <Cell
               style={{
                 height: rowHeight,
-                width: `calc(${textWidth}px + 2rem)`,
+                width: `calc(${textWidth}px + 0.75rem)`,
                 backgroundColor: '#fff',
               }}
             />
@@ -428,7 +425,7 @@ const Root = (props: Props) => {
           <Cell
             style={{
               height: rowHeight,
-              width: `calc(${textWidth}px + 2rem)`,
+              width: `calc(${textWidth}px + 0.75rem)`,
               borderRight: 'solid 1px #333',
             }}
           />
@@ -455,7 +452,6 @@ const Root = (props: Props) => {
           gridHeight={gridHeight}
           max={maxValue}
           onRowHover={undefined}
-          layout={layout}
           highlighted={undefined}
           textWidth={textWidth}
           chartWidth={chartWidth}
@@ -466,16 +462,12 @@ const Root = (props: Props) => {
     }
   }
 
-  if (layout === Layout.Right) {
-    rows.reverse();
-  }
-
   const axisTitle = axisLabel ? (
     <AxisTitle
       style={{
         width: chartWidth,
-        right: layout !== Layout.Right ? 0 : undefined,
-        textAlign: layout !== Layout.Right ? 'right' : undefined,
+        right: 0,
+        textAlign: 'right',
       }}
       className={'react-comparison-bar-chart-axis-title'}
       $dynamicFont={`clamp(0.75rem, ${chartWidth * 0.025}px, 0.875rem)`}
@@ -485,8 +477,7 @@ const Root = (props: Props) => {
   ) : null;
 
 
-  const buffer: React.CSSProperties = layout !== Layout.Right
-    ? {paddingRight: overflowPadding + 'rem'} : {paddingLeft: overflowPadding + 'rem'};
+  const buffer: React.CSSProperties = {paddingRight: overflowPadding + 'rem'};
 
   const scrollDown = rows.length > 39 ? (
     <ScrollDownText
@@ -507,9 +498,9 @@ const Root = (props: Props) => {
         style={{
           width: chartWidth,
           visibility: chartWidth ? undefined : 'hidden',
-          marginLeft: layout !== Layout.Right ? undefined : 0,
-          right: layout !== Layout.Right ? 0 : undefined,
-          left: layout !== Layout.Right ? undefined : 0,
+          marginLeft: undefined,
+          right: 0,
+          left: undefined,
           ...buffer,
         }}
         $dynamicFont={`clamp(0.65rem, ${chartWidth * 0.02}px, 0.875rem)`}
@@ -523,18 +514,16 @@ const Root = (props: Props) => {
           ref={rootRef}
           style={{
             gridTemplateRows: 'repeat(${totalValues}, auto)',
-            gridTemplateColumns: layout !== Layout.Right
-              ? 'clamp(75px, 300px, 15%) 2rem 1fr'
-              : '1fr 2rem clamp(75px, 300px, 15%)',
+            gridTemplateColumns: 'clamp(120px, 300px, 29%) 0.75rem 1fr',
           }}
           className={'react-comparison-bar-chart-grid'}
         >
           <Cell
-            ref={layout !== Layout.Right ? textRef : chartRef}
+            ref={textRef}
           />
           <Cell />
           <Cell
-            ref={layout !== Layout.Right ? chartRef : textRef}
+            ref={chartRef}
           />
           <ChartBlock>
             <BufferRow style={{height: rowHeight, position: 'sticky', top: '0', background: '#fff'}} />
@@ -548,9 +537,9 @@ const Root = (props: Props) => {
         style={{
           width: chartWidth,
           visibility: chartWidth ? undefined : 'hidden',
-          marginLeft: layout !== Layout.Right ? undefined : 0,
-          right: layout !== Layout.Right ? 0 : undefined,
-          left: layout !== Layout.Right ? undefined : 0,
+          marginLeft: undefined,
+          right: 0,
+          left: undefined,
           ...buffer,
         }}
       >

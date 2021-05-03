@@ -21,10 +21,6 @@ export interface RowHoverEvent {
   mouseCoords: {x: number, y: number};
 }
 
-export enum Layout {
-  Left = 'left',
-  Right = 'right',
-}
 
 export const fadeIn = keyframes`
   from {

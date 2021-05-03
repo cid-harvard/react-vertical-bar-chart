@@ -47,7 +47,6 @@ The VerticalBarChart component takes the following props:
 - **formatValue** *(optional)*: `(value: number) => string | number | React.ReactElement`
 - **axisLabel** *(optional)*: `React.ReactElement<any> | string | undefined | null`
 - **onRowHover** *(optional)*: `(event: RowHoverEvent) => void`
-- **layout** *(optional)*: `Layout`
 - **highlighted** *(optional)*: `string`
 - **onHighlightError** *(optional)*: `(value: string) => void`
 - **numberOfXAxisTicks** *(optional)*: `number`

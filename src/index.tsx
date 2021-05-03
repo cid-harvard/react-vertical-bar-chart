@@ -5,7 +5,6 @@ import Root, {
 import {
   BarDatum,
   RowHoverEvent,
-  Layout,
 } from './components/Utils';
 
 const VerticalBarChart = (props: VerticalBarChartProps) => {
@@ -18,7 +17,6 @@ export {
   VerticalBarChartProps,
   BarDatum,
   RowHoverEvent,
-  Layout,
 }
 
 export default VerticalBarChart;
