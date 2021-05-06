@@ -27,6 +27,7 @@ const ChartContainer = styled.div`
   height: 100%;
   position: relative;
   /* makes this element the relative parent for position: fixed children */
+  transform: translate(0px);
   will-change: transform;
 `;
 
@@ -57,6 +58,7 @@ const AxisLines = styled.div`
   display: flex;
 
   /* makes this element the relative parent for position: fixed children */
+  transform: translate(0px);
   will-change: transform;
 `;
 
@@ -68,20 +70,8 @@ const Grid = styled.div`
   position: relative;
   /* both auto and overlay required for browsers that don't support overlay */
   overflow: auto;
-  overflow-y: overlay;
-  overflow-x: hidden
-
-  ::-webkit-scrollbar {
-    -webkit-appearance: none;
-    width: 7px;
-  }
-  ::-webkit-scrollbar-thumb {
-    border-radius: 4px;
-    background-color: rgba(0, 0, 0, .3);
-  }
-  ::-webkit-scrollbar-track {
-    background-color: rgba(0, 0, 0, .1);
-  }
+  overflow-y: scroll;
+  overflow-x: hidden;
 `;
 
 const AxisValue = styled.div`
@@ -240,6 +230,7 @@ interface Measurements {
   chartWidth: number,
   chartHeight: number,
   textWidth: number,
+  scrollWidth: number,
 }
 
 const Root = (props: Props) => {
@@ -259,8 +250,8 @@ const Root = (props: Props) => {
     return null;
   }
 
-  const [{gridHeight, chartWidth, chartHeight, textWidth}, setMeasurements] = useState<Measurements>({
-    gridHeight: 0, chartWidth: 0, chartHeight: 0, textWidth: 0
+  const [{gridHeight, chartWidth, chartHeight, textWidth, scrollWidth}, setMeasurements] = useState<Measurements>({
+    gridHeight: 0, chartWidth: 0, chartHeight: 0, textWidth: 0, scrollWidth: 0,
   });
   const rootRef = useRef<HTMLDivElement | null>(null);
   const textRef = useRef<HTMLDivElement | null>(null);
@@ -270,11 +261,13 @@ const Root = (props: Props) => {
     if (rootRef && rootRef.current && chartRef && chartRef.current && textRef && textRef.current) {
       const chartRect = chartRef.current.getBoundingClientRect();
       const textRect = textRef.current.getBoundingClientRect();
+      const scrollWidth = rootRef.current.offsetWidth - rootRef.current.clientWidth;
       setMeasurements({
         gridHeight: rootRef.current.offsetHeight,
         chartWidth: chartRect.width,
         chartHeight: chartRect.height,
         textWidth: textRect.width,
+        scrollWidth,
       });
     }
   }, [rootRef, chartRef])
@@ -284,11 +277,13 @@ const Root = (props: Props) => {
       if (rootRef && rootRef.current && chartRef && chartRef.current && textRef && textRef.current) {
         const chartRect = chartRef.current.getBoundingClientRect();
         const textRect = textRef.current.getBoundingClientRect();
+        const scrollWidth = rootRef.current.offsetWidth - rootRef.current.clientWidth;
         setMeasurements({
           gridHeight: rootRef.current.offsetHeight,
           chartWidth: chartRect.width,
           chartHeight: chartRect.height,
           textWidth: textRect.width,
+          scrollWidth,
         });
       }
     };
@@ -483,7 +478,7 @@ const Root = (props: Props) => {
   ) : null;
 
 
-  const buffer: React.CSSProperties = {paddingRight: overflowPadding + 'rem'};
+  const buffer: React.CSSProperties = {paddingRight: overflowPadding + 'rem', marginRight: scrollWidth};
 
   const scrollDown = rows.length > 39 ? (
     <ScrollDownText
