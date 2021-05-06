@@ -144,18 +144,20 @@ const CenterLine = styled.div`
   width: 0;
   height: 100%;
   border-left: dashed 2px #333;
+  text-align: center;
+  display: flex;
+  justify-content: center;
 `;
 
 const CenterLineLabel = styled.div<WithDyanmicFont>`
   font-size: ${({$dynamicFont}) => $dynamicFont};
   white-space: nowrap;
   padding-left: 0.7rem;
-  text-shadow:
-       1px 1px 0 #fff,
-     -1px -1px 0 #fff,  
-      1px -1px 0 #fff,
-      -1px 1px 0 #fff,
-       1px 1px 0 #fff;
+`;
+
+const CenterLineBackground = styled.div`
+  background-color: #fff;
+  padding: 0.1rem;
 `;
 
 const BufferRow = styled.div`
@@ -551,7 +553,7 @@ const Root = (props: Props) => {
               $dynamicFont={`clamp(0.5rem, ${chartWidth * 0.023}px, 0.875rem)`}
               className={'react-comparison-bar-chart-axis-title'}
             >
-              {centerLineLabel}
+              <CenterLineBackground>{centerLineLabel}</CenterLineBackground>
             </CenterLineLabel>
           </CenterLine>
         </AxisLines>
