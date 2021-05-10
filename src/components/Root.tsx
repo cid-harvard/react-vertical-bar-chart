@@ -41,6 +41,7 @@ const TitleRoot = styled.div<WithDyanmicFont>`
   display: flex;
   position: absolute;
   top: 1px;
+  font-size: 0.65rem;
   font-size: ${({$dynamicFont}) => $dynamicFont};
 `;
 
@@ -67,6 +68,7 @@ const Grid = styled.div`
   height: 100%;
   grid-row: 1;
   display: grid;
+  grid-template-columns: 120px 0.75rem 1fr;
   position: relative;
   /* both auto and overlay required for browsers that don't support overlay */
   overflow: auto;
@@ -105,6 +107,7 @@ const AxisValue = styled.div`
 `;
 
 const AxisText = styled.span<WithDyanmicFont>`
+  font-size: 0.55rem;
   font-size: ${({$dynamicFont}) => $dynamicFont};
   transform: translate(-50%, calc(100% + 4px));
   position: absolute;
@@ -153,6 +156,7 @@ const CenterLineLabel = styled.div<WithDyanmicFont>`
   font-size: ${({$dynamicFont}) => $dynamicFont};
   white-space: nowrap;
   padding-left: 0.7rem;
+  font-size: 0.5rem;
 `;
 
 const CenterLineBackground = styled.div`
@@ -173,6 +177,7 @@ const Midline = styled.div`
   background-color: #f1f1f1;
   z-index: -1;
   transform: translateY(1px);
+  font-size: 0.75rem;
 `;
 
 const MidlineOverText = styled.div<WithDyanmicFont>`
@@ -191,6 +196,7 @@ const MidlineUnderText = styled.div<WithDyanmicFont>`
 `;
 
 const ScrollDownText = styled.div<WithDyanmicFont>`
+  font-size: 0.65rem;
   font-size: ${({$dynamicFont}) => $dynamicFont};
   position: absolute;
   right: calc(0.25rem + 12px);

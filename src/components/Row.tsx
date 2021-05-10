@@ -28,6 +28,7 @@ const LessThan1Root = styled.div`
 
 const LabelText = styled.div<WithDyanmicFont>`
   width: 100%;
+  font-size: 0.65rem;
   font-size: ${({$dynamicFont}) => $dynamicFont};
   white-space: nowrap;
   overflow: hidden;
