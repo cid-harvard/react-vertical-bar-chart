@@ -153,10 +153,10 @@ const CenterLine = styled.div`
 `;
 
 const CenterLineLabel = styled.div<WithDyanmicFont>`
+  font-size: 0.5rem;
   font-size: ${({$dynamicFont}) => $dynamicFont};
   white-space: nowrap;
   padding-left: 0.7rem;
-  font-size: 0.5rem;
 `;
 
 const CenterLineBackground = styled.div`
@@ -181,6 +181,7 @@ const Midline = styled.div`
 `;
 
 const MidlineOverText = styled.div<WithDyanmicFont>`
+  font-size: 0.55rem;
   font-size: ${({$dynamicFont}) => $dynamicFont};
   position: absolute;
   right: 1rem;
@@ -189,6 +190,7 @@ const MidlineOverText = styled.div<WithDyanmicFont>`
   z-index: 100;
 `;
 const MidlineUnderText = styled.div<WithDyanmicFont>`
+  font-size: 0.55rem;
   font-size: ${({$dynamicFont}) => $dynamicFont};
   position: absolute;
   right: 1rem;
