@@ -229,7 +229,7 @@ export interface Props {
   onHighlightError?: (value: string) => void;
   numberOfXAxisTicks?: number;
   centerLineValue: number;
-  centerLineLabel: string;
+  centerLineLabel: string | number | React.ReactElement;
   overMideLineLabel: string;
   underMideLineLabel: string;
   scrollDownText: string;

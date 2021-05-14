@@ -51,7 +51,7 @@ The VerticalBarChart component takes the following props:
 - **onHighlightError** *(optional)*: `(value: string) => void`
 - **numberOfXAxisTicks** *(optional)*: `number`
 - **centerLineValue**: `number`
-- **centerLineLabel**: `string`
+- **centerLineLabel**: `string | number | React.ReactElement`
 - **overMideLineLabel**: `string`
 - **underMideLineLabel**: `string`
 - **scrollDownText**: `string`
