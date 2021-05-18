@@ -141,6 +141,8 @@ const Row = (props: Props) => {
             width: `${percent - centerLineValue}%`,
             transitionDelay: '0.3s',
           }}
+          role={'graphics-symbol'}
+          aria-label={'Value of ' + d.title + ' is ' + d.value}
         />
       </React.Fragment>
     );
@@ -162,6 +164,8 @@ const Row = (props: Props) => {
             width: `${centerLineValue - percent}%`,
             transitionDelay: '0.3s',
           }}
+          role={'graphics-symbol'}
+          aria-label={'Value of ' + d.title + ' is ' + d.value}
         />
       </React.Fragment>
     );
